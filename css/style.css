@@ -34,9 +34,20 @@ header a {
   transition: 0.2s;
 }
 
-header a:hover {
+header a:hover,
+header a:focus {
   background: rgb(255, 65, 108);
   color: #fff;
+}
+
+header a:active {
+  background-image: linear-gradient(
+    to right,
+    rgb(218, 68, 83),
+    rgb(137, 33, 107)
+  );
+  color: #fff;
+  border: none;
 }
 
 main {
@@ -110,6 +121,17 @@ p {
   padding: 0 10px;
 }
 
+.card span {
+  margin: 5px 10px;
+  max-width: 80px;
+  border-radius: 10px;
+  padding: 2px 5px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  background: rgba(245, 175, 25, 0.4);
+}
+
 footer {
   height: 10vh;
   display: flex;
@@ -134,7 +156,7 @@ footer h3 {
   align-items: center;
 }
 
-.c {
+.links a {
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -143,17 +165,12 @@ footer h3 {
   transition: ease 0.2s;
 }
 
-.c a {
-  text-decoration: none;
-  color: transparent;
-}
-
-.c img {
+.links a img {
   width: 100%;
   height: 100%;
 }
 
-.c:hover {
+.links a:hover {
   background: linear-gradient(to right, rgb(241, 39, 17), rgb(245, 175, 25));
   transform: translateY(-10px);
 }

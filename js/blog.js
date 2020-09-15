@@ -1,4 +1,3 @@
-/* eslint-disable no-restricted-syntax */
 const firebaseConfig = {
   apiKey: 'AIzaSyB9YT2WCAioUInetCcxCbIOrmKJXMtHGlo',
   authDomain: 'post-f77d3.firebaseapp.com',
@@ -15,19 +14,16 @@ firebase.analytics();
 
 const database = firebase.database().ref('posts');
 
-const recent = document.querySelector('.recent');
+const content = document.querySelector('.content');
 
 function retrive(data) {
-  recent.innerHTML = '';
+  content.innerHTML = '';
 
   const posts = data.val();
 
-  for (const [i, post] of Object.keys(posts).reverse().entries()) {
-    if (i === 3) {
-      return;
-    }
-    recent.innerHTML += `
-      <div class="card" tabindex="0">
+  for (const post of Object.keys(posts).reverse()) {
+    content.innerHTML += `
+      <div class="post" id="${post}">
         <img src="${posts[post].link}" alt="${posts[post].title}">
         ${
           posts[post].hasOwnProperty('tags')

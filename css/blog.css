@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: #f8f8ff;
+  min-height: 100vh;
+}
+
+.container {
+  width: 80%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(255, 65, 108);
+}
+
+header a {
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+  padding: 3px 10px;
+  border: 1.5px solid rgb(255, 65, 108);
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+header a:hover {
+  background: rgb(255, 65, 108);
+  color: #fff;
+}
+
+footer {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 20px;
+}
+
+.content .post {
+  max-width: 400px;
+  height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.content .post span {
+  display: inline-block;
+  margin: 5px 10px;
+  text-align: center;
+  padding: 2px 10px;
+  border-radius: 10px;
+  text-transform: lowercase;
+  background: rgba(0, 255, 55, 0.2);
+}
+
+.content .post img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.content .post h2,
+p {
+  margin: 10px;
+}
+
+.container .post::-webkit-scrollbar {
+  width: 3px;
+  background: #fff;
+}
+
+.content .post::-webkit-scrollbar-thumb {
+  background: rgb(255, 65, 108);
+}
+
+footer h3 {
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 65, 108),
+    rgb(255, 75, 43)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transition: 0.2s;
+  margin-left: 15px;
+}
+
+footer a img {
+  width: 100%;
+  height: 100%;
+}
+
+footer a:hover {
+  background: linear-gradient(to right, rgb(241, 39, 17), rgb(245, 175, 25));
+  transform: translateY(-10px);
+}
+
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+  }
+}
