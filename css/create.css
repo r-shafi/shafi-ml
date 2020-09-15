@@ -179,4 +179,14 @@ footer a:hover {
   footer {
     flex-direction: column;
   }
+  .links a {
+    height: 30px;
+    width: 30px;
+  }
+  main form {
+    width: 100%;
+  }
+  main form section {
+    width: 100%;
+  }
 }

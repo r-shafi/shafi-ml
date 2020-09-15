@@ -21,6 +21,7 @@ function retrive(data) {
 
   const posts = data.val();
 
+  // eslint-disable-next-line no-restricted-syntax
   for (const post of Object.keys(posts).reverse()) {
     content.innerHTML += `
       <div class="post" id="${post}">
