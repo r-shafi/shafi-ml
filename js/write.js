@@ -15,11 +15,14 @@ const status = firebase.database().ref('posts');
 function savePost(title, link, tags, description) {
   const newStatus = status.push();
 
+  const now = new Date();
+
   newStatus.set({
     title,
     link,
     tags,
     description,
+    time: Intl.DateTimeFormat('en-GB', { dateStyle: 'full' }).format(now),
   });
 }
 

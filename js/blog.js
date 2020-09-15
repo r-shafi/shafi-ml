@@ -32,6 +32,7 @@ function retrive(data) {
             : null
         }
         <h2>${posts[post].title}</h2>
+        <span class="date">${posts[post].time}</span>
         <p>${posts[post].description}</p>
       </div>
     `;
