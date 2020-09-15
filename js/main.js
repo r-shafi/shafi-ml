@@ -35,7 +35,7 @@ function retrive(data) {
             : null
         }
         <h2>${posts[post].title}</h2>
-        <span class="date">${posts[post].time}</span>
+        <p class="date">${posts[post].time}</p>
         <p>${posts[post].description}</p>
       </div>
     `;
