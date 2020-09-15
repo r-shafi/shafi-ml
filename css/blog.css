@@ -77,6 +77,7 @@ footer {
   border-radius: 10px;
   text-transform: lowercase;
   background: rgba(0, 255, 55, 0.2);
+  font-weight: bold;
 }
 
 .content .post img {
@@ -142,4 +143,38 @@ footer a:hover {
     height: 30px;
     width: 30px;
   }
+}
+
+/*
+TAGS CLASS 🤘
+*/
+
+.javascript {
+  background: #ffff00;
+  color: #000000;
+}
+
+.css {
+  background: #005fff;
+  color: #fff;
+}
+
+.html {
+  background: #ff5000;
+  color: #f8f8ff;
+}
+
+.markdown {
+  background: #1a1a1a;
+  color: #f8f8ff;
+}
+
+.movie {
+  background: linear-gradient(to right, rgb(241, 39, 17), rgb(245, 175, 25));
+  color: #f8f8ff;
+}
+
+.misc {
+  background: #26ff00;
+  color: #000000;
 }
