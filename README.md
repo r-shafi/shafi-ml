@@ -1,29 +1,23 @@
-### shafi.ml
+### www.shafi.ml
 
-Personal Portfolio/Blog Site
+Personal Portfolio & Blog Site
 
 ---
 
-### sitemap:
+### Pages
 
-- homepage
-- admin / create
-- blog
-- individual blog post
+- Home
+- Projects
+- Blog
+- Contact
+- About
 
-### todo:
+### Tools I Want to Use
 
-- color scheme
-- database
-- mobile-first
-- font-load
-- favicon
-- icons / image
-
-### focus:
-
-- how to create a page with dynamic content from click
-
-### after:
-
-- replace css with scss
+- HTML
+- CSS
+- JavaScript
+- React
+- Node
+- SCSS
+- Firebase
