@@ -21,3 +21,7 @@ Personal Portfolio & Blog Site
 - Node
 - SCSS
 - Firebase
+
+### Side objectives
+
+- global css file which contains most of the css
