@@ -170,3 +170,14 @@ form textarea:focus {
   color: #ffffff;
   border: 2px solid #b4f1f1;
 }
+
+.clock {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50vh;
+  width: 100%;
+}

@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/shafi.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
+
+import Header from './components/Header.js';
+import Clock from './components/Clock.js';
 
 ReactDOM.render(
   <div className="container">
     <Header />
-    <Footer />
+    <Clock />
   </div>,
   document.getElementById('root')
 );
