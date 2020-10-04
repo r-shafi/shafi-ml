@@ -1,18 +1,16 @@
 import React from 'react';
 
-class Header extends React.Component {
-  render() {
-    return (
-      <header>
-        <h1>Shafi Rayhan</h1>
-        <nav>
-          <a href="nolink.com">NA</a>
-          <a href="nolink.com">NA</a>
-          <a href="nolink.com">NA</a>
-        </nav>
-      </header>
-    );
-  }
+function Header() {
+  return (
+    <header>
+      <h1>Shafi Rayhan</h1>
+      <nav>
+        <a href="index.html">home</a>
+        <a href="index.html">about</a>
+        <a href="index.html">contact</a>
+      </nav>
+    </header>
+  );
 }
 
 export default Header;

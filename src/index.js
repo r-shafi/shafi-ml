@@ -1,14 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import Header from './components/Header';
+import Hero from './components/Hero';
 import './css/shafi.css';
 
-import Header from './components/Header.js';
-import Clock from './components/Clock.js';
-
-ReactDOM.render(
+render(
   <div className="container">
     <Header />
-    <Clock />
+    <Hero />
   </div>,
-  document.getElementById('root')
+  document.querySelector('#root')
 );
