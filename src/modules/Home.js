@@ -1,8 +1,8 @@
 import React from 'react';
 
-function App() {
+function Home() {
   return (
-    <div className="temp">
+    <div className="box">
       <h1>Hi, I am Shafi!</h1>
       <p>
         This site is <span>UNDER CONSTRUCTION</span>.
@@ -12,4 +12,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

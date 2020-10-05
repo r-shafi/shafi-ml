@@ -14,39 +14,115 @@ body {
     rgb(224, 234, 252),
     rgb(207, 222, 243)
   );
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.temp {
-  font-size: 2rem;
+#root {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+  font-size: 1.5rem;
+}
+
+header h1 {
+  color: #071e3d;
+}
+
+header nav a {
+  text-decoration: none;
+  margin: 0 0 0 10px;
+  padding: 5px 10px 4px;
+  color: #1f4287;
+  transition: 0.2s;
+}
+
+header nav a:hover,
+header nav a:focus {
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+}
+
+.box {
+  width: 80%;
+  min-height: 60vh;
+  margin: 50px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 2rem;
+  color: #2d4059;
 }
-
-.temp h1,
-p,
-a {
-  margin: 5px 0;
+.box span {
+  color: #ea5455;
 }
-
-.temp a {
+.box a {
   text-decoration: none;
-  color: #000000;
-  border: 2px solid #000000;
-  padding: 5px 5px 2px 5px;
-  transition: 0.3s;
+  background: #2d4059;
+  color: #ea5455;
+  padding: 7px 10px 3px;
+  margin: 10px 0;
+  letter-spacing: 2px;
+}
+.box a:hover,
+.box a:focus {
+  text-shadow: 2px 2px 0 #ffd460;
 }
 
-.temp span {
-  color: #ff4f81;
+form {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.temp a:hover,
-.temp a:focus {
-  background: rgba(0, 0, 0, 0.5);
-  color: #ffffff;
+form label {
+  font-size: 1.3rem;
+  display: table;
+  margin-bottom: 4px;
+  letter-spacing: 1.5px;
+  color: #ea5455;
+}
+
+form input,
+textarea {
+  display: block;
+  min-width: 250px;
+  font-size: 1.5rem;
+  border: none;
+  padding: 5px 10px;
+  outline: none;
+  margin-bottom: 15px;
+  resize: none;
+}
+
+form textarea {
+  min-height: 150px;
+}
+
+form input:focus,
+form textarea:focus {
+  border: 2px solid #ea5455;
+}
+
+form button {
+  background: #2d4059;
+  color: #ea5455;
+  padding: 5px 10px 3px;
+  margin: 10px 0;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover,
+form button:focus {
+  text-shadow: 2px 2px 0 #ffd460;
 }

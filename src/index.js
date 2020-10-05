@@ -3,6 +3,6 @@ import { render } from 'react-dom';
 
 import './styles/style.css';
 
-import App from './modules/App';
+import Nav from './modules/Nav';
 
-render(<App />, document.querySelector('#root'));
+render(<Nav />, document.querySelector('#root'));
