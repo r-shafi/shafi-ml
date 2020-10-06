@@ -1,4 +1,5 @@
 import React from 'react';
+import loading from '../api/loading.gif';
 
 class About extends React.Component {
   constructor() {
@@ -6,33 +7,29 @@ class About extends React.Component {
     this.state = {
       fact: null,
     };
-    this.setFact = this.setFact.bind(this);
-  }
-
-  setFact(data) {
-    const randomIndex = Math.round(Math.random() * data.all.length);
-    this.setState({
-      fact: data.all[randomIndex].text,
-    });
   }
 
   async componentDidMount() {
     const response = await fetch('https://cat-fact.herokuapp.com/facts');
     const data = await response.json();
-    this.setFact(data);
+    const getFact = () => {
+      const randomIndex = Math.round(Math.random() * data.all.length);
+      this.setState({
+        fact: data.all[randomIndex].text,
+      });
+    };
+    getFact();
+    setInterval(getFact, 30000);
   }
 
   render() {
     return (
       <div className="box">
         {!this.state.fact ? (
-          <h1>LOADING FACT...</h1>
+          <img src={loading} alt="loading" />
         ) : (
-          <h1>{this.state.fact}</h1>
+          <h2>{this.state.fact}</h2>
         )}
-        <button onClick={this.setFact} disabled>
-          Load New Fact
-        </button>
       </div>
     );
   }
