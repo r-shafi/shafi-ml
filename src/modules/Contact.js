@@ -2,7 +2,7 @@ import React from 'react';
 
 function Contact() {
   return (
-    <form data-netlify="true" name="contact">
+    <form name="contact" netlify>
       <div>
         <label htmlFor="name">Name:</label>
         <input type="text" id="name" />

@@ -57,6 +57,7 @@ header nav a:focus {
   align-items: center;
   font-size: 2rem;
   color: #2d4059;
+  text-align: center;
 }
 .box span {
   color: #ea5455;
@@ -88,6 +89,7 @@ form label {
   margin-bottom: 4px;
   letter-spacing: 1.5px;
   color: #ea5455;
+  text-shadow: 1px 1px 0 #071e3d;
 }
 
 form input,
@@ -125,4 +127,11 @@ form button {
 form button:hover,
 form button:focus {
   text-shadow: 2px 2px 0 #ffd460;
+}
+
+@media (min-width: 750px) {
+  form input,
+  form textarea {
+    width: 500px;
+  }
 }
