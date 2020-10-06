@@ -5,6 +5,7 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Header from './Header';
+import Footer from './Footer';
 
 function Nav() {
   return (
@@ -22,6 +23,7 @@ function Nav() {
           <Contact />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }

@@ -8,7 +8,6 @@
 }
 
 body {
-  min-height: 100vh;
   background-image: linear-gradient(
     to right,
     rgb(224, 234, 252),
@@ -17,8 +16,10 @@ body {
 }
 
 #root {
-  width: 80%;
+  width: 90%;
   margin: auto;
+  position: relative;
+  min-height: 100vh;
 }
 
 header {
@@ -133,5 +134,23 @@ form button:focus {
   form input,
   form textarea {
     width: 500px;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 750px) {
+  header {
+    flex-direction: column;
+    align-items: center;
   }
 }
