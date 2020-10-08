@@ -32,6 +32,7 @@ class App extends React.Component {
             </Route>
           </Switch>
         </Router>
+        <div className="footermargin"></div>
         <Footer />
       </div>
     );

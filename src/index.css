@@ -4,11 +4,15 @@
 
 :root {
   --bg: #293241;
-  --nav: #caf0f8;
   --link: #ee6c4d;
   --title: #ffba08;
+  --nav: #d0d1ff;
   --text: #edf2f4;
   --hl: #80b918;
+}
+
+:focus {
+  outline: 3px solid #ff006e;
 }
 
 * {
@@ -65,6 +69,11 @@ nav a {
   margin-left: 15px;
 }
 
+nav a:hover,
+nav a:focus {
+  color: #f08080;
+}
+
 img {
   width: 50px;
 }
@@ -77,6 +86,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 10px;
 }
 
 .social {
@@ -95,6 +105,11 @@ footer {
   border-radius: 50%;
 }
 
+.social a:hover,
+.social a:focus {
+  background: var(--nav);
+}
+
 .social img {
   height: 2rem;
   width: 2rem;
@@ -105,4 +120,52 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.button {
+  display: table;
+  margin: 10px 0;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  padding: 3px 10px 5px;
+  background: var(--title);
+  color: var(--bg);
+  font-weight: bold;
+}
+
+.button:hover,
+.button:focus {
+  background: var(--nav);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.footermargin {
+  min-height: 10vh;
+}
+
+@media (max-width: 750px) {
+  header,
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header h1 {
+    padding-top: 8px;
+  }
+  nav a {
+    display: inline-block;
+    margin: 0;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+  .social {
+    margin-top: 15px;
+  }
+  .social a {
+    margin: 0;
+    margin-right: 10px;
+  }
+  .footermargin {
+    min-height: 20vh;
+  }
 }
