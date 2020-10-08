@@ -1,8 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
+import './index.css';
 
-import './styles/style.css';
+import App from './App';
 
-import Nav from './modules/Nav';
-
-render(<Nav />, document.querySelector('#root'));
+render(<App />, document.querySelector('#root'));
