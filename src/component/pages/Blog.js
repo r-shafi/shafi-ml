@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { firebase, firebaseConfig } from '../fbdb';
+import { firebase } from '../fbdb';
 
 import load from '../../img/load.gif';
 

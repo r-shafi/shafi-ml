@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { firebase, firebaseConfig } from '../fbdb';
+import { firebase } from '../fbdb';
 
 const blogPosts = firebase.database().ref('posts');
 
@@ -36,36 +36,40 @@ class Create extends React.Component {
         new Date()
       ),
     });
+
+    alert('POST CREATED 🎉');
   }
 
   render() {
     const { title, link, post } = this.state;
 
     return (
-      <form>
-        <label htmlFor="title">Title:</label>
-        <input
-          type="text"
-          id="title"
-          value={title}
-          onChange={this.handleChange}
-        />
+      <main className="create">
+        <form>
+          <label htmlFor="title">Title:</label>
+          <input
+            type="text"
+            id="title"
+            value={title}
+            onChange={this.handleChange}
+          />
 
-        <label htmlFor="link">Image URL:</label>
-        <input
-          type="text"
-          id="link"
-          value={link}
-          onChange={this.handleChange}
-        />
+          <label htmlFor="link">Image URL:</label>
+          <input
+            type="text"
+            id="link"
+            value={link}
+            onChange={this.handleChange}
+          />
 
-        <label htmlFor="post">Post:</label>
-        <textarea id="post" value={post} onChange={this.handleChange} />
+          <label htmlFor="post">Post:</label>
+          <textarea id="post" value={post} onChange={this.handleChange} />
 
-        <button type="submit" onClick={this.handleSubmit}>
-          SUBMIT
-        </button>
-      </form>
+          <button type="submit" onClick={this.handleSubmit}>
+            SUBMIT
+          </button>
+        </form>
+      </main>
     );
   }
 }
