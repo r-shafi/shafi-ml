@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import fb from '../img/fb.svg';
 import ld from '../img/ld.svg';
 import msngr from '../img/msngr.svg';
@@ -11,7 +13,13 @@ function Footer() {
     <footer>
       <div>
         <p>Created by Shafi</p>
-        <p>Copyright &copy; {new Date().getFullYear()}</p>
+        <p>
+          Copyright{''}
+          <Link to="/create" className="nostyle">
+            &copy;
+          </Link>
+          {new Date().getFullYear()}
+        </p>
       </div>
       <div className="social">
         <a href="https://twitter.com/shafiemoji">

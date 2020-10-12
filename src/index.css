@@ -201,3 +201,8 @@ button:focus {
     flex-direction: column;
   }
 }
+
+.nostyle {
+  text-decoration: none;
+  color: #ffffff;
+}
