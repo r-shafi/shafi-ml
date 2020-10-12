@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Footer from './component/Footer';
 import Home from './component/pages/Home';
 import Blog from './component/pages/Blog';
+import Create from './component/pages/Create';
 import Contact from './component/pages/Contact';
 
 class App extends React.Component {
@@ -29,6 +30,9 @@ class App extends React.Component {
             </Route>
             <Route path="/contact">
               <Contact />
+            </Route>
+            <Route path="/create">
+              <Create />
             </Route>
           </Switch>
         </Router>
