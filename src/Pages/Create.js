@@ -36,7 +36,6 @@ class Create extends React.Component {
         new Date()
       ),
     });
-
     alert('POST CREATED 🎉');
   }
 
@@ -45,7 +44,7 @@ class Create extends React.Component {
 
     return (
       <main className="create">
-        <form>
+        <form autoComplete="off">
           <label htmlFor="title">Title:</label>
           <input
             type="text"
@@ -66,7 +65,7 @@ class Create extends React.Component {
           <textarea id="post" value={post} onChange={this.handleChange} />
 
           <button type="submit" onClick={this.handleSubmit}>
-            SUBMIT
+            POST
           </button>
         </form>
       </main>
