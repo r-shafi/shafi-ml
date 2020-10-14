@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { firebase } from '../fbdb';
+import { firebase } from '../Private/Config';
 
 const blogPosts = firebase.database().ref('posts');
 

@@ -9,7 +9,7 @@ var firebaseConfig = {
   messagingSenderId: '211836768789',
   appId: '1:211836768789:web:daa81c2fe3678962c6741c',
 };
-// Initialize Firebase
+
 firebase.initializeApp(firebaseConfig);
 
-export { firebase, firebaseConfig };
+export { firebase };
