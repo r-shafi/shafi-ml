@@ -9,6 +9,13 @@ class Blog extends React.Component {
       loaded: false,
     };
     this.fetchPosts = this.fetchPosts.bind(this);
+    this.showPost = this.showPost.bind(this);
+  }
+
+  showPost(e) {
+    const target = e.target;
+    const p = target.querySelector('.post_para');
+    p.className = 'show';
   }
 
   fetchPosts(data) {
@@ -40,11 +47,13 @@ class Blog extends React.Component {
           <h1>BLOG POSTS LOADING...</h1>
         ) : (
           this.state.posts.map((post, i) => (
-            <div className="post" key={i}>
+            <div className="post" key={i} onClick={this.showPost}>
               {post.link ? <img src={post.link} alt={post.title} /> : null}
-              <h1>{post.title}</h1>
-              <span className="info">{post.time}</span>
-              <p>{post.post}</p>
+              <div>
+                <h1>{post.title}</h1>
+                <span className="info">{post.time}</span>
+                <p className="post_para">{post.post}</p>
+              </div>
             </div>
           ))
         )}
