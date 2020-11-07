@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Source+Sans+Pro&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+  min-height: 100vh;
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 5px 10px 0;
+}
+
+header nav a:hover {
+  border-bottom: 1.5px solid #000;
+}
+
+footer {
+  min-height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
