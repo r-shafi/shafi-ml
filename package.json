@@ -4,14 +4,14 @@
   "description": "Hello, I am Shafi and I'm rebuilding my website with the new technologies that I'm learning. All of the items listed below are the things that's going to act as the base of my website but I'm not limiting myself to these. Over the course of building this website I'm sure things are going o change drastically from what they are planned to be, but I'm hoping for a good outcome. You can help build my website too by forking this repository and committing your pull requests!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "gatsby develop"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/r-shafi/shafi-ml.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Shafi Rayhan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/r-shafi/shafi-ml/issues"

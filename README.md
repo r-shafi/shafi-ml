@@ -8,9 +8,11 @@ You can help build my website too by forking this repository and committing your
 
 ## COLORS
 
-- BODY: #F4FFFD
-- TEXT: #0F1928
-- LINK: #E44E4E
+- BODY: #edf2f4;
+- COLOR: #2b2d42;
+- : #8d99ae;
+- LINKS: #ef233c;
+- : #d90429;
 
 ## PAGES
 
