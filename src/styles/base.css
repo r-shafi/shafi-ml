@@ -46,6 +46,30 @@ p {
   font-size: 1.2rem;
 }
 
+button {
+  display: table;
+  font-size: 1.2rem;
+  padding: 3px 1rem;
+  color: var(--yellow);
+  background: var(--black);
+  border: 2px solid var(--black);
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 2px;
+  outline: none;
+}
+
+button:hover,
+button:focus {
+  border: 2px solid var(--yellow);
+}
+
+button:active {
+  color: var(--black);
+  background: var(--yellow);
+  border: 2px solid var(--black);
+}
+
 /* ! PAGE COMPONENTS */
 
 .content {
@@ -59,16 +83,18 @@ p {
 .button {
   display: table;
   margin: 1rem 0;
-  padding: 0.25rem 1rem;
+  padding: 3px 1rem;
   text-decoration: none;
   font-size: 1.5rem;
   background: var(--black);
   color: var(--rose);
+  border: 2px solid var(--rose);
 }
 
 .button:hover,
 .button:focus {
   color: var(--yellow);
+  border: 2px solid var(--yellow);
 }
 /* ! HEADER */
 
@@ -78,6 +104,12 @@ header {
   align-items: center;
   min-height: 8vh;
   font-size: 1.2rem;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: var(--pale-nav-blue);
+  font-family: 'Roboto Mono', monospace;
 }
 
 /* ! Navigation */
@@ -148,4 +180,70 @@ footer {
 .works a:focus {
   background: var(--black);
   color: var(--yellow);
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 2rem;
+}
+
+.about {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about img {
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid var(--yellow);
+}
+
+.about h2 {
+  margin: 1rem 0;
+}
+
+.form {
+  background: #ffffff;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form label {
+  display: table;
+  font-size: 1.2rem;
+  margin-bottom: 3px;
+  color: var(--black);
+}
+
+.form input,
+.form textarea {
+  font-size: 1.3rem;
+  width: 300px;
+  margin-bottom: 1rem;
+  padding: 3px 10px;
+  border: 1px solid var(--yellow);
+  outline: none;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border: 2px solid var(--black);
+}
+
+.form textarea {
+  resize: none;
+  height: 150px;
 }
