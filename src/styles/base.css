@@ -15,6 +15,7 @@
   --rose: #ef476f;
   --red: #d90429;
   --sub: #272640;
+  --green: #55a630;
   --yellow: #fca311;
 }
 
@@ -87,8 +88,8 @@ button:active {
   text-decoration: none;
   font-size: 1.5rem;
   background: var(--black);
-  color: var(--rose);
-  border: 2px solid var(--rose);
+  color: var(--green);
+  border: 2px solid var(--green);
 }
 
 .button:hover,
@@ -121,7 +122,7 @@ header nav {
 }
 
 header nav a {
-  color: var(--rose);
+  color: var(--green);
   text-decoration: none;
   font-size: 1.3rem;
   padding: 5px 10px 6px;
@@ -182,6 +183,8 @@ footer {
   color: var(--yellow);
 }
 
+/* ! CONTACT PAGE */
+
 .contact {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -190,11 +193,13 @@ footer {
 }
 
 .about {
+  width: 100%;
   background: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -207,7 +212,7 @@ footer {
 }
 
 .about h2 {
-  margin: 1rem 0;
+  margin: 1rem 0 0.5rem;
 }
 
 .form {
@@ -234,7 +239,7 @@ footer {
   width: 300px;
   margin-bottom: 1rem;
   padding: 3px 10px;
-  border: 1px solid var(--yellow);
+  border: 2px solid var(--yellow);
   outline: none;
 }
 
@@ -246,4 +251,24 @@ footer {
 .form textarea {
   resize: none;
   height: 150px;
+}
+
+.social a {
+  margin: 0 1rem;
+}
+
+.social img {
+  height: 2rem;
+  width: 2rem;
+}
+
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .text {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 }
