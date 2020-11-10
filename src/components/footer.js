@@ -5,6 +5,25 @@ import whatsapp from '../media/whatsapp.svg';
 import facebook from '../media/facebook.svg';
 import messenger from '../media/messenger.svg';
 
+const links = [
+  {
+    image: twitter,
+    link: 'https://twitter.com/shafiemoji',
+  },
+  {
+    image: whatsapp,
+    link: 'https://api.whatsapp.com/send?phone=8801704792392',
+  },
+  {
+    image: facebook,
+    link: 'https://www.facebook.com/shafiemoji',
+  },
+  {
+    image: messenger,
+    link: 'https://m.me/shafiemoji',
+  },
+];
+
 export default function Footer() {
   return (
     <footer>
@@ -13,18 +32,13 @@ export default function Footer() {
         <p>&copy; {new Date().getFullYear()}</p>
       </div>
       <div className="social">
-        <a href="https://twitter.com/shafiemoji">
-          <img src={twitter} alt="twitter profile" />
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=8801704792392">
-          <img src={whatsapp} alt="" />
-        </a>
-        <a href="https://www.facebook.com/shafiemoji">
-          <img src={facebook} alt="" />
-        </a>
-        <a href="https://m.me/shafiemoji">
-          <img src={messenger} alt="" />
-        </a>
+        {links.map((obj) => {
+          return (
+            <a href={obj.link}>
+              <img src={obj.image} alt="" />
+            </a>
+          );
+        })}
       </div>
     </footer>
   );

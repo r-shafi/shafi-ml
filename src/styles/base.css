@@ -22,6 +22,7 @@
 body {
   background: var(--white);
   color: var(--black);
+  position: relative;
 }
 
 /* ! ELEMENTS */
@@ -94,8 +95,8 @@ button:active {
 
 .button:hover,
 .button:focus {
-  color: var(--yellow);
-  border: 2px solid var(--yellow);
+  color: var(--rose);
+  border: 2px solid var(--rose);
 }
 /* ! HEADER */
 
@@ -183,6 +184,11 @@ footer {
   color: var(--yellow);
 }
 
+.home {
+  width: 100%;
+  max-width: 700px;
+}
+
 /* ! CONTACT PAGE */
 
 .contact {
@@ -260,6 +266,37 @@ footer {
 .social img {
   height: 2rem;
   width: 2rem;
+  border-radius: 50%;
+  border: 2px solid var(--black);
+}
+
+.social img:hover {
+  border: 2px solid var(--green);
+}
+
+.burger {
+  display: none;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 50%;
+  max-width: 300px;
+  top: 0;
+  right: 0;
+  background: var(--black);
+  display: none;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: var(--rose);
+  font-size: 2rem;
+}
+
+.sidebar a:hover {
+  color: var(--white);
 }
 
 @media (max-width: 800px) {
@@ -271,4 +308,23 @@ footer {
     text-align: center;
     margin-bottom: 1rem;
   }
+  .full-navigation {
+    display: none;
+  }
+  .burger {
+    display: block;
+    height: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.sidebar-open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
 }
