@@ -67,3 +67,12 @@
   resize: none;
   height: 150px;
 }
+
+.error {
+  display: none;
+  margin-top: -0.5rem;
+  font-size: 0.9rem;
+  color: #ff0000;
+  padding-left: 5px;
+  border-left: 2px solid #000;
+}
