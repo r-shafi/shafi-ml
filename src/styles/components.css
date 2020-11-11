@@ -1,0 +1,62 @@
+h1,
+h2 {
+  font-family: 'Roboto Mono', monospace;
+  color: var(--pale-nav-blue);
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Mono', monospace;
+  color: var(--sub);
+  padding-left: 1rem;
+  border-left: 2px solid var(--rose);
+  margin: 1rem 0;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+button {
+  display: table;
+  font-size: 1.2rem;
+  padding: 2.5px 1rem 5px;
+  color: var(--yellow);
+  background: var(--black);
+  border: 2px solid var(--black);
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 2px;
+  outline: none;
+}
+
+button:hover,
+button:focus {
+  border: 2px solid var(--yellow);
+}
+
+button:active {
+  color: var(--black);
+  background: var(--yellow);
+  border: 2px solid var(--black);
+}
+
+.button {
+  display: table;
+  margin: 1rem 0;
+  padding: 3px 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background: var(--black);
+  color: var(--green);
+  border: 2px solid var(--green);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--rose);
+  border: 2px solid var(--rose);
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 import Base from '../components/base';
 
+import '../styles/contact.css';
+
 function About() {
   return (
     <div className="about">

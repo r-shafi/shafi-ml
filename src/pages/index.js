@@ -1,22 +1,28 @@
 import React from 'react';
 import Base from '../components/base';
 
+import '../styles/home.css';
+
 export default function Home() {
   return (
     <Base>
       <div className="home">
-        <h1>Lorem ipsum dolor sit amet.</h1>
-        <h3>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et optio
-          similique consequuntur illum!
-        </h3>
+        <h1>Hi, I am Shafi Rayhan!</h1>
+        <h3>I love JavaScript.</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
-          blanditiis numquam earum ipsam eos, sequi incidunt laudantium delectus
-          atque veniam laboriosam mollitia qui perspiciatis minus sunt,
-          repellendus ullam fugiat vero dicta aliquam dolore beatae suscipit!
-          Adipisci ut eos odit beatae!
+          I'm a Front-End Web Developer working from{' '}
+          <strong>103.142.81.155</strong>.
         </p>
+        <p>
+          I have been creating websites since 2017 and have mastered{' '}
+          <strong>HTML, CSS, JavaScript, React &amp; GatsbyJS</strong>.
+        </p>
+        <p>
+          Nowadays I'm spending my time trying to learn{' '}
+          <strong>NodeJS, GraphiQL, SCSS</strong> and many more web
+          technologies.
+        </p>
+        <p>Contact me if you want me to create a website for you.</p>
         <a href="mailto:rayhanshafi7@gmail.com" className="button">
           CONTACT ME
         </a>

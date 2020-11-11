@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql, useStaticQuery } from 'gatsby';
 
 import menu from '../media/menu.svg';
 
@@ -23,6 +23,7 @@ export default function Header() {
         <Link to="/">Home</Link>
         <Link to="/works">Works</Link>
         <Link to="/contact">Contact</Link>
+        <button onClick={toggleMenu}>x</button>
       </nav>
     </header>
   );

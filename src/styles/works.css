@@ -1,0 +1,27 @@
+.works {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  gap: 2rem;
+}
+
+.works a {
+  color: var(--rose);
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  box-shadow: 0 0 5px var(--gray);
+  border-radius: 1rem;
+  outline: none;
+}
+
+.works a:hover,
+.works a:focus {
+  background: var(--black);
+  color: var(--yellow);
+}
