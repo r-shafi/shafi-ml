@@ -6,7 +6,8 @@
 }
 
 .works a {
-  color: var(--rose);
+  background: var(--black);
+  color: var(--yellow);
   width: 200px;
   height: 100px;
   display: flex;
@@ -18,10 +19,12 @@
   box-shadow: 0 0 5px var(--gray);
   border-radius: 1rem;
   outline: none;
+  transition: 0.2s;
 }
 
 .works a:hover,
 .works a:focus {
   background: var(--black);
-  color: var(--yellow);
+  color: var(--rose);
+  transform: scale(0.98);
 }

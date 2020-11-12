@@ -54,17 +54,29 @@ class ContactForm extends React.Component {
       <main className="form">
         <form onSubmit={this.handleSubmit} name="message" netlify>
           <label htmlFor="name">Name:</label>
-          <input required type="text" id="name" onChange={this.handleChange} />
+          <input
+            required
+            type="text"
+            id="name"
+            onChange={this.handleChange}
+            value={this.state.name}
+          />
           <label htmlFor="email">Email:</label>
           <input
             required
             type="email"
             id="email"
             onChange={this.handleChange}
+            value={this.state.email}
           />
           <p className="error">Not a valid email</p>
           <label htmlFor="msg">Message:</label>
-          <textarea required id="msg" onChange={this.handleChange}></textarea>
+          <textarea
+            required
+            id="msg"
+            onChange={this.handleChange}
+            value={this.state.msg}
+          ></textarea>
           <button type="submit" id="send">
             Send
           </button>

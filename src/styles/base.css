@@ -110,7 +110,8 @@ header nav a:focus {
   font-size: 2rem;
 }
 
-.sidebar a:hover {
+.sidebar a:hover,
+.sidebar a:focus {
   color: var(--white);
 }
 

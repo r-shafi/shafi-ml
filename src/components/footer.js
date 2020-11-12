@@ -32,9 +32,9 @@ export default function Footer() {
         <p>&copy; {new Date().getFullYear()}</p>
       </div>
       <div className="social">
-        {links.map((obj) => {
+        {links.map((obj, i) => {
           return (
-            <a href={obj.link}>
+            <a href={obj.link} key={i}>
               <img src={obj.image} alt="" />
             </a>
           );

@@ -56,8 +56,8 @@ export default function Works() {
   return (
     <Base>
       <div className="works">
-        {links.map((obj) => (
-          <a href={obj.link} target="_blank">
+        {links.map((obj, i) => (
+          <a href={obj.link} key={i} target="_blank" rel="noreferrer">
             {obj.title}
           </a>
         ))}
