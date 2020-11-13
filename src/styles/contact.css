@@ -23,7 +23,7 @@
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid var(--dark-white);
+  border: 3px solid var(--pink);
 }
 
 .about h2 {
@@ -44,7 +44,7 @@
 .form label {
   display: table;
   font-size: 1.2rem;
-  margin-bottom: 3px;
+  margin-bottom: 1rem;
   color: var(--black);
 }
 
@@ -52,15 +52,15 @@
 .form textarea {
   font-size: 1.3rem;
   width: 300px;
-  margin-bottom: 1rem;
   padding: 3px 10px;
-  border: 2px solid var(--light-gray);
+  border: 2px solid var(--midnight);
   outline: none;
+  display: table;
 }
 
 .form input:focus,
 .form textarea:focus {
-  border: 2px solid var(--dark-white);
+  border: 2px solid var(--pink);
 }
 
 .form textarea {

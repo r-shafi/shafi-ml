@@ -19,8 +19,8 @@ export default function Home() {
         </p>
         <p>
           Nowadays I'm spending my time trying to learn{' '}
-          <strong>NodeJS, GraphiQL, SCSS</strong> and many more web
-          technologies.
+          <strong>NodeJS, GraphiQL, SCSS</strong>
+          and many more web technologies.
         </p>
         <p>Contact me if you want me to create a website for you.</p>
         <a href="mailto:rayhanshafi7@gmail.com" className="button">

@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Source+Sans+Pro&display=swap');
 
 :root {
-  --white: #f8f9fa;
-  --dark-white: #ced4da;
-  --black: #212529;
-  --dark-gray: #343a40;
-  --light-gray: #495057;
-  --red: #ef233c;
+  --white: #fbf9fa;
+  --sky: #8dc6ff;
+  --black: #000000;
+  --midnight: #22313f;
+  --pale-blue: #34495e;
+  --pink: #f95966;
+  --gray: #212121;
 }
 
 * {
@@ -62,7 +63,7 @@ header nav {
 }
 
 header nav a {
-  color: var(--dark-gray);
+  color: var(--pink);
   text-decoration: none;
   font-size: 1.3rem;
   padding: 5px 10px 6px;
@@ -72,11 +73,11 @@ header nav a {
 
 header nav a:hover,
 header nav a:focus {
-  color: var(--black);
+  color: var(--midnight);
 }
 
 .active-link {
-  color: var(--light-gray);
+  color: var(--midnight);
 }
 
 /* ! S I D E B A R */
@@ -97,20 +98,20 @@ header nav a:focus {
   max-width: 300px;
   top: 0;
   right: 0;
-  background: var(--light-gray);
+  background: var(--pale-blue);
   display: none;
 }
 
 .sidebar a {
   text-decoration: none;
-  color: var(--dark-white);
+  color: var(--sky);
   font-size: 2rem;
   font-weight: normal;
 }
 
 .sidebar a:hover,
 .sidebar a:focus {
-  color: var(--white);
+  color: var(--pink);
   border: none;
 }
 

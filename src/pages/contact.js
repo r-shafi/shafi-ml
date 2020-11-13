@@ -10,7 +10,8 @@ function About() {
       <h2>Shafi Rayhan</h2>
       <p>Front End Web Developer</p>
       <p>
-        Studying Power Engineering at <em>Sylhet Polytechnic Institute</em>
+        Studying Power Engineering at
+        <em>Sylhet Polytechnic Institute</em>
       </p>
       <p>Placeholder text incoming...</p>
       <p>
@@ -35,7 +36,7 @@ class ContactForm extends React.Component {
   }
 
   handleSubmit(e) {
-    const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+    const emailRegex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g;
     if (!this.state.email.match(emailRegex)) {
       e.preventDefault();
       document.querySelector('.error').style.display = 'block';
@@ -50,33 +51,43 @@ class ContactForm extends React.Component {
   }
 
   render() {
+    const { name, email, msg } = this.state;
     return (
       <main className="form">
         <form onSubmit={this.handleSubmit} name="message" netlify>
-          <label htmlFor="name">Name:</label>
-          <input
-            required
-            type="text"
-            id="name"
-            onChange={this.handleChange}
-            value={this.state.name}
-          />
-          <label htmlFor="email">Email:</label>
-          <input
-            required
-            type="email"
-            id="email"
-            onChange={this.handleChange}
-            value={this.state.email}
-          />
+          <label htmlFor="name">
+            Name:
+            <input
+              required
+              type="text"
+              id="name"
+              onChange={this.handleChange}
+              value={name}
+            />
+          </label>
+
+          <label htmlFor="email">
+            Email:
+            <input
+              required
+              type="email"
+              id="email"
+              onChange={this.handleChange}
+              value={email}
+            />
+          </label>
+
           <p className="error">Not a valid email</p>
-          <label htmlFor="msg">Message:</label>
-          <textarea
-            required
-            id="msg"
-            onChange={this.handleChange}
-            value={this.state.msg}
-          ></textarea>
+          <label htmlFor="msg">
+            Message:
+            <textarea
+              required
+              id="msg"
+              onChange={this.handleChange}
+              value={msg}
+            />
+          </label>
+
           <button type="submit" id="send">
             Send
           </button>

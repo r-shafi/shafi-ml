@@ -6,8 +6,8 @@
 }
 
 .works a {
-  background: var(--black);
-  color: var(--yellow);
+  background: var(--gray);
+  color: var(--pink);
   width: 200px;
   height: 100px;
   display: flex;
@@ -24,7 +24,7 @@
 
 .works a:hover,
 .works a:focus {
-  background: var(--black);
-  color: var(--rose);
+  background: var(--pale-blue);
+  color: var(--sky);
   transform: scale(0.98);
 }

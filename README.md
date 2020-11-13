@@ -8,11 +8,7 @@ You can help build my website too by forking this repository and committing your
 
 ## COLORS
 
-- BODY: #edf2f4;
-- COLOR: #2b2d42;
-- : #8d99ae;
-- LINKS: #ef233c;
-- : #d90429;
+Changing every day
 
 ## PAGES
 
