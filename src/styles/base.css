@@ -1,17 +1,12 @@
-/* This page contains all the CSS that are going to be used on every page */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Source+Sans+Pro&display=swap');
 
 :root {
+  --white: #f8f9fa;
+  --dark-white: #ced4da;
   --black: #212529;
-  --pale-nav-blue: #2b2d42;
-  --gray: #8d99ae;
-  --white: #edf2f4;
-  --rose: #ef476f;
-  --red: #d90429;
-  --sub: #272640;
-  --green: #55a630;
-  --yellow: #fca311;
+  --dark-gray: #343a40;
+  --light-gray: #495057;
+  --red: #ef233c;
 }
 
 * {
@@ -56,7 +51,7 @@ header {
 
 header h1 a {
   text-decoration: none;
-  color: var(--pale-nav-blue);
+  color: var(--black);
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -67,30 +62,32 @@ header nav {
 }
 
 header nav a {
-  color: var(--green);
+  color: var(--dark-gray);
   text-decoration: none;
   font-size: 1.3rem;
   padding: 5px 10px 6px;
   outline: none;
+  font-weight: bold;
 }
 
 header nav a:hover,
 header nav a:focus {
-  color: var(--pale-nav-blue);
-  box-shadow: 0 0 1px #2b2d42;
+  color: var(--black);
 }
 
-.sidebar-open {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+.active-link {
+  color: var(--light-gray);
 }
+
+/* ! S I D E B A R */
 
 .burger {
   display: none;
+}
+
+.burger:hover,
+.burger:focus {
+  transform: scale(0.9);
 }
 
 .sidebar {
@@ -100,19 +97,21 @@ header nav a:focus {
   max-width: 300px;
   top: 0;
   right: 0;
-  background: var(--black);
+  background: var(--light-gray);
   display: none;
 }
 
 .sidebar a {
   text-decoration: none;
-  color: var(--rose);
+  color: var(--dark-white);
   font-size: 2rem;
+  font-weight: normal;
 }
 
 .sidebar a:hover,
 .sidebar a:focus {
   color: var(--white);
+  border: none;
 }
 
 .sidebar-open {
@@ -137,15 +136,16 @@ footer {
   margin: 0 1rem;
 }
 
-.social img {
+.social a img {
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  border: 2px solid var(--black);
+  transition: 0.2s;
 }
 
-.social img:hover {
-  border: 2px solid var(--green);
+.social a img:hover,
+.social a img:focus {
+  transform: scale(1.1);
 }
 
 /*! M E D I A */

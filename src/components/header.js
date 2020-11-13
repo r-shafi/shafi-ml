@@ -26,9 +26,15 @@ export default function Header() {
         <Link to="/">Shafi</Link>
       </h1>
       <nav className="full-navigation">
-        <Link to="/">Home</Link>
-        <Link to="/works">Works</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/" activeClassName="active-link">
+          Home
+        </Link>
+        <Link to="/works" activeClassName="active-link">
+          Works
+        </Link>
+        <Link to="/contact" activeClassName="active-link">
+          Contact
+        </Link>
       </nav>
       <img
         src={menu}

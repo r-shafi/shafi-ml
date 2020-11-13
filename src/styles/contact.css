@@ -23,7 +23,7 @@
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid var(--yellow);
+  border: 3px solid var(--dark-white);
 }
 
 .about h2 {
@@ -54,13 +54,13 @@
   width: 300px;
   margin-bottom: 1rem;
   padding: 3px 10px;
-  border: 2px solid var(--yellow);
+  border: 2px solid var(--light-gray);
   outline: none;
 }
 
 .form input:focus,
 .form textarea:focus {
-  border: 2px solid var(--black);
+  border: 2px solid var(--dark-white);
 }
 
 .form textarea {
@@ -72,7 +72,8 @@
   display: none;
   margin-top: -0.5rem;
   font-size: 0.9rem;
-  color: #ff0000;
+  color: var(--red);
   padding-left: 5px;
-  border-left: 2px solid #000;
+  border-left: 2px solid var(--dark-white);
+  letter-spacing: 1.5px;
 }

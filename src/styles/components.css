@@ -1,7 +1,7 @@
 h1,
 h2 {
   font-family: 'Roboto Mono', monospace;
-  color: var(--pale-nav-blue);
+  color: var(--dark-gray);
 }
 
 h3,
@@ -9,9 +9,9 @@ h4,
 h5,
 h6 {
   font-family: 'Roboto Mono', monospace;
-  color: var(--sub);
+  color: var(--light-gray);
   padding-left: 1rem;
-  border-left: 2px solid var(--rose);
+  border-left: 3px solid var(--dark-white);
   margin: 1rem 0;
 }
 
@@ -20,12 +20,16 @@ p {
   margin-bottom: 0.25rem;
 }
 
+strong {
+  color: var(--dark-gray);
+}
+
 button {
   display: table;
   font-size: 1.2rem;
-  padding: 2.5px 1rem 5px;
-  color: var(--yellow);
-  background: var(--black);
+  padding: 2px 1rem 5px;
+  color: var(--red);
+  background: var(--dark-gray);
   border: 2px solid var(--black);
   cursor: pointer;
   font-weight: bold;
@@ -35,7 +39,8 @@ button {
 
 button:hover,
 button:focus {
-  border: 2px solid var(--yellow);
+  background: var(--black);
+  border-color: var(--red);
 }
 
 button:active {
@@ -50,13 +55,17 @@ button:active {
   padding: 3px 1rem;
   text-decoration: none;
   font-size: 1.5rem;
-  background: var(--black);
-  color: var(--green);
-  border: 2px solid var(--green);
+  background: var(--dark-white);
+  color: var(--dark-gray);
+  border: 2px solid var(--dark-gray);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  transition: 0.1s;
 }
 
 .button:hover,
 .button:focus {
-  color: var(--rose);
-  border: 2px solid var(--rose);
+  color: var(--white);
+  background: var(--dark-gray);
+  border-color: var(--black);
 }
