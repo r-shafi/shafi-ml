@@ -1,8 +1,6 @@
 import React from 'react';
 import Base from '../components/base';
 
-import '../styles/contact.css';
-
 function About() {
   return (
     <div className="about">
@@ -54,7 +52,7 @@ class ContactForm extends React.Component {
     const { name, email, msg } = this.state;
     return (
       <main className="form">
-        <form onSubmit={this.handleSubmit} name="message" netlify>
+        <form onSubmit={this.handleSubmit} name="message" data-netlify="true">
           <label htmlFor="name">
             Name:
             <input

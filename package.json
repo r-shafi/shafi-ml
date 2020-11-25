@@ -4,7 +4,7 @@
   "description": "Hello, I am Shafi and I'm rebuilding my website with the new technologies that I'm learning. All of the items listed below are the things that's going to act as the base of my website but I'm not limiting myself to these. Over the course of building this website I'm sure things are going o change drastically from what they are planned to be, but I'm hoping for a good outcome. You can help build my website too by forking this repository and committing your pull requests!",
   "main": "index.js",
   "scripts": {
-    "develop": "gatsby develop"
+    "start": "gatsby develop"
   },
   "repository": {
     "type": "git",

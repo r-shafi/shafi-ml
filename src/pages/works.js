@@ -1,8 +1,6 @@
 import React from 'react';
 import Base from '../components/base';
 
-import '../styles/works.css';
-
 const links = [
   {
     title: 'Calculator',

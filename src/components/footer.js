@@ -29,16 +29,18 @@ export default function Footer() {
     <footer>
       <div className="text">
         <p>Created by Shafi Rayhan</p>
-        <p>&copy; {new Date().getFullYear()}</p>
+        <p>
+          &copy;
+          {' '}
+          {new Date().getFullYear()}
+        </p>
       </div>
       <div className="social">
-        {links.map((obj, i) => {
-          return (
-            <a href={obj.link} key={i}>
-              <img src={obj.image} alt="" />
-            </a>
-          );
-        })}
+        {links.map((obj, i) => (
+          <a href={obj.link} key={i}>
+            <img src={obj.image} alt="" />
+          </a>
+        ))}
       </div>
     </footer>
   );
