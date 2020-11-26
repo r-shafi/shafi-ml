@@ -1,5 +1,8 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Base from '../components/base';
+
+import '../style/contact.css';
 
 function About() {
   return (
@@ -98,6 +101,11 @@ class ContactForm extends React.Component {
 export default function ContactPage() {
   return (
     <Base>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Contact | Shafi Rayhan</title>
+        <meta name="description" content="Hello! I am Shafi Rayhan, a front-end web developer based in Sylhet, Bangladesh. I love working with JavaScript, React, GatsbyJS and other web technologies. Contact me if you want me to work with you!" />
+      </Helmet>
       <div className="contact">
         <About />
         <ContactForm />

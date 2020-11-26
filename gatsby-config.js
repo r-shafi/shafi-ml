@@ -3,4 +3,5 @@ module.exports = {
     title: 'Shafi Rayhan',
     author: 'Shafi Rayhan',
   },
+  plugins: ['gatsby-plugin-react-helmet'],
 };

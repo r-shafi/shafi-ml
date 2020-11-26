@@ -1,0 +1,21 @@
+.works {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.works a {
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  transition: 0.2s;
+}
+
+.works a:hover,
+.works a:focus {
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+}

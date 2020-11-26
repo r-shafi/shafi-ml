@@ -1,12 +1,19 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
+
 import Base from '../components/base';
 
 export default function Home() {
   return (
     <Base>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home | Shafi Rayhan</title>
+        <meta name="description" content="Hello! I am Shafi Rayhan, a front-end web developer based in Sylhet, Bangladesh. I love working with JavaScript, React, GatsbyJS and other web technologies." />
+      </Helmet>
       <div className="home">
         <h1>Hi, I am Shafi Rayhan!</h1>
-        <h3>I love JavaScript.</h3>
+        <em>I love JavaScript.</em>
         <p>
           I&apos;m a Front-End Web Developer based in Sylhet.
         </p>

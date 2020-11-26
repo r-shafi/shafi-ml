@@ -48,7 +48,7 @@ export default function Header() {
         <Link to="/">Home</Link>
         <Link to="/works">Works</Link>
         <Link to="/contact">Contact</Link>
-        <button onClick={toggleMenu}>x</button>
+        <button onClick={toggleMenu} type="button" name="close sidebar">x</button>
       </nav>
     </header>
   );

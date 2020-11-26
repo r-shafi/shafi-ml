@@ -1,5 +1,8 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Base from '../components/base';
+
+import '../style/works.css';
 
 const links = [
   {
@@ -53,6 +56,11 @@ const links = [
 export default function Works() {
   return (
     <Base>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Works | Shafi Rayhan</title>
+        <meta name="description" content="Hello! I am Shafi Rayhan, a front-end web developer based in Sylhet, Bangladesh. I love working with JavaScript, React, GatsbyJS and other web technologies. These are the projects that I've been working on." />
+      </Helmet>
       <div className="works">
         {links.map((obj, i) => (
           <a href={obj.link} key={i} target="_blank" rel="noreferrer">
