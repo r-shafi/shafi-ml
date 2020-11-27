@@ -10,12 +10,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #000;
+  border: 2px solid var(--text);
   transition: 0.2s;
 }
 
 .works a:hover,
 .works a:focus {
   background: rgba(0, 0, 0, 0.9);
-  color: #fff;
+  color: var(--background);
 }

@@ -4,22 +4,49 @@ import Base from '../components/base';
 
 import '../style/contact.css';
 
+const emailRegex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+
 function About() {
   return (
     <div className="about">
       <img src="https://picsum.photos/200" alt="profile" />
       <h2>Shafi Rayhan</h2>
       <p>Front End Web Developer</p>
-      <p>
-        Studying Power Engineering at
-        <em>Sylhet Polytechnic Institute</em>
-      </p>
-      <p>Placeholder text incoming...</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-        ratione. Amet dolores repellat qui iste, autem minus expedita quo
-        incidunt!
-      </p>
+      <section className="details">
+        <p>
+          I am studying Power Engineering at
+          {' '}
+          <a href="http://spi.gov.bd/">Sylhet Polytechnic Institute</a>
+          .
+        </p>
+        <p>I've been programming since 2017 and still learning something new everyday.</p>
+        <p>
+          Whenever I'm not coding I love to spend my time with my family, watching movies
+          {' '}
+          <em>or</em>
+          {' '}
+          old tv shows
+          {' '}
+          <em>or</em>
+          {' '}
+          anime
+          {' '}
+          <em>or</em>
+          {' '}
+          listening to music.
+        </p>
+        <section className="skills">
+          <h3>Skills</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Gatsby</li>
+            <li>Design</li>
+          </ul>
+        </section>
+      </section>
     </div>
   );
 }
@@ -37,13 +64,14 @@ class ContactForm extends React.Component {
   }
 
   handleSubmit(e) {
-    const emailRegex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g;
     if (!this.state.email.match(emailRegex)) {
       e.preventDefault();
       document.querySelector('.error').style.display = 'block';
       setTimeout(() => {
         document.querySelector('.error').style.display = 'none';
       }, 3000);
+    } else {
+      return true;
     }
   }
 
