@@ -42,7 +42,7 @@ export default function Footer() {
       </div>
       <div className="social">
         {links.map((obj, i) => (
-          <a href={obj.link} key={i}>
+          <a href={obj.link} key={i} rel="noreferrer" target="_blank">
             <img src={obj.image} alt="" />
           </a>
         ))}

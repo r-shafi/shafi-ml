@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Reem+Kufi&display=swap');
 
 :root {
-  --background: #fbfffe;
-  --text: #001514;
-  --link: #ff4d58;
-  --shadow: rgba(0, 0, 0, 0.2);
+  --background: #24292f;
+  --title: #ff6768;
+  --text: #ffffff;
+  --link: #ff7c7d;
+  --shadow: rgba(0, 0, 0, 0.4);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 16px;
 }
 
 body {
   background: var(--background);
   color: var(--text);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
 .container {
@@ -42,47 +42,58 @@ body {
 /* !NORMALIZE */
 
 h1,
-h2 {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 2rem;
-}
-
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 1.4rem;
-  margin: 0.5rem 0;
+h2,
+h3 {
+  font-family: 'Reem Kufi', sans-serif;
+  color: var(--title);
 }
 
 p {
-  font-size: 1.2rem;
-}
-
-img {
-  height: 200px;
+  font-family: 'Open Sans', sans-serif;
+  color: #dbdbdb;
 }
 
 a {
-  text-decoration: none;
   color: var(--link);
-  font-size: 1.2rem;
 }
 
-a:hover {
-  text-decoration: underline 1.5px var(--text);
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+strong {
+  color: var(--text);
+  font-style: italic;
+}
+
+/* * XOXOXOX * */
+
+/* * XOXOXOX * */
+
+button {
+  font-weight: bold;
+  display: table;
+  background: var(--title);
+  color: var(--background);
+  border: 2px solid var(--link);
+  font-size: 1.5rem;
+  padding: 0.1rem 1rem 0.2rem;
+  margin: 1rem 0;
+  cursor: pointer;
 }
 
 .button {
   display: table;
-  background: var(--text);
+  background: var(--title);
   color: var(--background);
   font-size: 1.3rem;
   padding: 0.2rem 1rem;
   margin: 1rem 0;
-  border: 2px solid var(--text);
+  border: 2px solid var(--link);
   transition: 0.2s;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .button:hover,
@@ -90,24 +101,8 @@ a:hover {
 button:hover,
 button:focus {
   background: var(--background);
-  color: var(--text);
-  border: 2px solid var(--text);
-}
-
-strong {
-  font-size: 1.2rem;
-  color: #151515;
-}
-
-button {
-  display: table;
-  background: #ff4d58;
-  color: #1a2737;
-  font-size: 1.5rem;
-  padding: 0.1rem 1rem 0.3rem;
-  margin: 1rem 0;
-  border: 2px solid #1a2737;
-  cursor: pointer;
+  color: var(--link);
+  text-decoration: none;
 }
 
 /* !HEADER */
@@ -120,25 +115,24 @@ header {
 }
 
 header h1 a {
-  font-family: 'Roboto Condensed', sans-serif;
   font-size: 2rem;
-}
-
-header h1 a:hover,
-header h1 a:focus {
-  background: none;
   text-decoration: none;
 }
 
 .full-navigation a {
   color: var(--text);
   padding: 0.4rem 1rem 0.5rem;
+  text-decoration: none;
 }
 
 .full-navigation a:hover,
 .full-navigation a:focus {
-  text-decoration: none;
+  color: var(--link);
   background: rgba(0, 0, 0, 0.2);
+}
+
+.full-navigation a.active-page {
+  color: var(--link);
 }
 
 .burger {
@@ -150,21 +144,21 @@ header h1 a:focus {
   top: 0;
   right: 0;
   height: 100vh;
-  width: 50%;
-  background: rgba(0, 0, 0, 0.95);
+  width: 60%;
+  background: rgba(0, 0, 0, 0.9);
   display: none;
 }
 
 .sidebar a {
-  color: var(--background);
+  color: var(--text);
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .sidebar a:hover,
 .sidebar a:focus {
+  color: var(--link);
   background: none;
-  border-bottom: 2px solid var(--background);
 }
 
 .sidebar a:last-child {

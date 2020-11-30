@@ -33,7 +33,8 @@
 .details .skills ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  list-style: none;
+  list-style: circle;
+  list-style-position: inside;
 }
 
 .form {
@@ -46,11 +47,11 @@
 }
 
 .form form {
-  width: 80%;
+  min-width: 300px;
+  max-width: 500px;
 }
 
 .form label {
-  font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
@@ -58,10 +59,13 @@
 .form textarea {
   display: table;
   width: 100%;
-  max-width: 400px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 0.25rem 0.5rem;
   margin: 5px 0 1rem;
+}
+
+.form textarea {
+  height: 100px;
   resize: none;
 }
 

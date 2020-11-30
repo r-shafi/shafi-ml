@@ -1,19 +1,13 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
-
 import Base from '../components/base';
+import Head from '../components/head';
 
 export default function Home() {
   return (
     <Base>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Home | Shafi Rayhan</title>
-        <meta name="description" content="Hello! I am Shafi Rayhan, a front-end web developer based in Sylhet, Bangladesh. I love working with JavaScript, React, GatsbyJS and other web technologies." />
-      </Helmet>
+      <Head title="Home" />
       <div className="home">
         <h1>Hi, I am Shafi Rayhan!</h1>
-        <em>I love JavaScript.</em>
         <p>
           I&apos;m a Front-End Web Developer based in Sylhet.
         </p>
@@ -25,7 +19,6 @@ export default function Home() {
         </p>
         <p>
           Nowadays I&apos;m spending my time trying to learn
-          {' '}
           <strong>NodeJS, GraphQL, SCSS </strong>
           and many more web technologies.
         </p>

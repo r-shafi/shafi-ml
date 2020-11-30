@@ -26,13 +26,13 @@ export default function Header() {
         <Link to="/">Shafi</Link>
       </h1>
       <nav className="full-navigation">
-        <Link to="/" activeClassName="active-link">
+        <Link to="/" activeClassName="active-page">
           Home
         </Link>
-        <Link to="/works" activeClassName="active-link">
+        <Link to="/works" activeClassName="active-page">
           Works
         </Link>
-        <Link to="/contact" activeClassName="active-link">
+        <Link to="/contact" activeClassName="active-page">
           Contact
         </Link>
       </nav>
