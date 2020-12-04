@@ -1,0 +1,9 @@
+.post-content {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.author {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--shadow);
+}

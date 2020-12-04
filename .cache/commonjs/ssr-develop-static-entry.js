@@ -144,7 +144,7 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
           // pathContext was deprecated in v2. Renamed to pageContext
           pathContext: pageData.result ? pageData.result.pageContext : undefined
         };
-        const pageElement = createElement(_ssrSyncRequires.default.components[componentChunkName], props);
+        const pageElement = createElement(_ssrSyncRequires.default.ssrComponents[componentChunkName], props);
         const wrappedPage = (0, _apiRunnerSsr.default)(`wrapPageElement`, {
           element: pageElement,
           props

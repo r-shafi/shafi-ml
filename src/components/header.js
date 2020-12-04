@@ -29,6 +29,7 @@ export default function Header() {
         <Link to="/" activeClassName="active-page">
           Home
         </Link>
+        <Link to="/blog" activeClassName="active-page">Blog</Link>
         <Link to="/works" activeClassName="active-page">
           Works
         </Link>
@@ -46,6 +47,7 @@ export default function Header() {
       />
       <nav className="sidebar" onKeyDown={handleClose}>
         <Link to="/">Home</Link>
+        <Link to="/blog">Blog</Link>
         <Link to="/works">Works</Link>
         <Link to="/contact">Contact</Link>
         <button onClick={toggleMenu} type="button" name="close sidebar">x</button>
