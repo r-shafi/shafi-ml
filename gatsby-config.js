@@ -14,4 +14,7 @@ module.exports = {
     },
     'gatsby-transformer-remark',
   ],
+  flags: {
+    PRESERVE_WEBPACK_CACHE: true,
+  },
 };

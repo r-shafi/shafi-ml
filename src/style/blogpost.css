@@ -7,3 +7,21 @@
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--shadow);
 }
+
+li {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.mb2 {
+  margin-bottom: 2rem;
+}
+
+h2,
+h3 {
+  color: #f29f05;
+  display: table;
+  border-bottom: 3px solid #a6a6a6;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1.5px;
+}
