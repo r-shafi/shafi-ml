@@ -69,12 +69,7 @@ export default function Header() {
         mobile: '(max-width: 750px)',
       }}
       >
-        {(matches) => (
-          <>
-            {matches.mobile && <MobileNavigation />}
-            {!matches.mobile && <FullNavigation />}
-          </>
-        )}
+        {(matches) => matches.mobile ? (<MobileNavigation />) : (<FullNavigation />)}
       </Media>
     </header>
   );
