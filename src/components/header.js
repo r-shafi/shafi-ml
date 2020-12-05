@@ -71,7 +71,8 @@ export default function Header() {
       >
         {(matches) => (
           <>
-            {matches.mobile ? <MobileNavigation /> : <FullNavigation />}
+            {matches.mobile && <MobileNavigation />}
+            {!matches.mobile && <FullNavigation />}
           </>
         )}
       </Media>
