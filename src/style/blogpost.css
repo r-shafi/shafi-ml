@@ -8,7 +8,7 @@
   border-bottom: 1px solid var(--shadow);
 }
 
-li {
+.post-content li {
   list-style-position: inside;
   list-style-type: disc;
 }
@@ -17,8 +17,8 @@ li {
   margin-bottom: 2rem;
 }
 
-h2,
-h3 {
+.post-content h2,
+.post-content h3 {
   color: #f29f05;
   display: table;
   border-bottom: 3px solid #a6a6a6;

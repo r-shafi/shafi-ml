@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import Base from '../components/base';
 import Head from '../components/head';
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Media from 'react-media';
 
 import menu from '../media/menu.svg';
 
@@ -19,24 +20,26 @@ function handleClose(e) {
   }
 }
 
-export default function Header() {
+function FullNavigation() {
   return (
-    <header>
-      <h1>
-        <Link to="/">Shafi</Link>
-      </h1>
-      <nav className="full-navigation">
-        <Link to="/" activeClassName="active-page">
-          Home
-        </Link>
-        <Link to="/blog" activeClassName="active-page">Blog</Link>
-        <Link to="/works" activeClassName="active-page">
-          Works
-        </Link>
-        <Link to="/contact" activeClassName="active-page">
-          Contact
-        </Link>
-      </nav>
+    <nav className="full-navigation">
+      <Link to="/" activeClassName="active-page">
+        Home
+      </Link>
+      <Link to="/blog" activeClassName="active-page">Blog</Link>
+      <Link to="/works" activeClassName="active-page">
+        Works
+      </Link>
+      <Link to="/contact" activeClassName="active-page">
+        Contact
+      </Link>
+    </nav>
+  );
+}
+
+function MobileNavigation() {
+  return (
+    <>
       <img
         src={menu}
         alt="toggle menu"
@@ -52,6 +55,26 @@ export default function Header() {
         <Link to="/contact">Contact</Link>
         <button onClick={toggleMenu} type="button" name="close sidebar">x</button>
       </nav>
+    </>
+  );
+}
+
+export default function Header() {
+  return (
+    <header>
+      <h1>
+        <Link to="/">Shafi</Link>
+      </h1>
+      <Media queries={{
+        mobile: '(max-width: 750px)',
+      }}
+      >
+        {(matches) => (
+          <>
+            {matches.mobile ? <MobileNavigation /> : <FullNavigation />}
+          </>
+        )}
+      </Media>
     </header>
   );
 }
