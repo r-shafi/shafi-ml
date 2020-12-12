@@ -66,15 +66,16 @@ export default function Header() {
         <Link to="/">Shafi</Link>
       </h1>
       <Media queries={{
+        desktop: '(min-width: 751px)',
         mobile: '(max-width: 750px)',
       }}
       >
-        {(matches) => (
+        {(matches) => 
           <>
+            {matches.desktop && <FullNavigation />}
             {matches.mobile && <MobileNavigation />}
-            {!matches.mobile && <FullNavigation />}
           </>
-        )}
+        }
       </Media>
     </header>
   );
