@@ -5,9 +5,38 @@ import Head from '../components/head';
 import '../style/works.css';
 
 const links = [
+
   {
-    title: 'Calculator',
-    link: 'https://modest-villani-d0e72a.netlify.app/calculator/index.html',
+    title: 'Progress Steps',
+    link: 'https://modest-villani-d0e72a.netlify.app/progress-steps/index.html',
+  },
+  {
+    title: 'Hidden Navigation',
+    link: 'https://modest-villani-d0e72a.netlify.app/rotating-navigation/index.html',
+  },
+  {
+    title: 'Hidden Search Input',
+    link: 'https://modest-villani-d0e72a.netlify.app/hidden-search-input/index.html',
+  },
+  {
+    title: 'Blurry Loading',
+    link: 'https://modest-villani-d0e72a.netlify.app/blurry-loading/index.html',
+  },
+  {
+    title: 'Face Detection (Experimental)',
+    link: 'https://modest-villani-d0e72a.netlify.app/face-detection/index.html',
+  },
+  {
+    title: 'Custom Video Controls',
+    link: 'https://modest-villani-d0e72a.netlify.app/video-controls/index.html',
+  },
+  {
+    title: 'Slide in on Scroll',
+    link: 'https://modest-villani-d0e72a.netlify.app/scroll-animation/index.html',
+  },
+  {
+    title: 'Expand on Hover',
+    link: 'https://modest-villani-d0e72a.netlify.app/expanding-cards/index.html',
   },
   {
     title: 'Clock',
