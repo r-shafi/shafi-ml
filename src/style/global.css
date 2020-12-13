@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style-position: inside;
 }
 
 body {
@@ -43,7 +44,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: 'Reem Kufi', sans-serif;
   color: var(--title);
 }
@@ -123,6 +125,7 @@ header h1 a {
   color: var(--text);
   padding: 0.4rem 1rem 0.5rem;
   text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .full-navigation a:hover,
@@ -133,6 +136,7 @@ header h1 a {
 
 .full-navigation a.active-page {
   color: var(--link);
+  font-family: 'Open Sans', sans-serif;
 }
 
 .burger {
@@ -147,6 +151,7 @@ header h1 a {
   width: 60%;
   background: rgba(0, 0, 0, 0.9);
   display: none;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .sidebar a {
@@ -219,4 +224,23 @@ footer {
   .form {
     padding: 1rem;
   }
+}
+
+li {
+  font-family: 'Open Sans', sans-serif;
+  list-style-type: circle;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--shadow);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--link);
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--title);
 }

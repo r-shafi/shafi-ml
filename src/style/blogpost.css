@@ -1,27 +1,73 @@
-.post-content {
-  margin: 1rem 0;
-  font-size: 1.1rem;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+.post-body {
+  width: 1000px;
+  max-width: 80vw;
+  margin: auto;
 }
 
-.author {
+.post-body h1 {
+  font-size: 4.5rem;
+  margin: 1rem 0;
+}
+.post-body h2 {
+  font-size: 3.5rem;
+  margin: 1rem 0;
+}
+.post-body h3 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+.post-body h4 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.post-body p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.date {
+  margin: 0;
+  color: #cccccc;
+}
+
+p.author {
+  margin: 0;
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--shadow);
 }
 
-.post-content li {
-  list-style-position: inside;
-  list-style-type: disc;
+pre {
+  background: var(--shadow);
+  overflow: auto;
+  font-size: 1.1rem;
+  padding: 1rem;
+  font-family: 'Fira Code', monospace;
 }
 
-.mb2 {
-  margin-bottom: 2rem;
+pre > code {
+  font-family: 'Fira Code', monospace;
+  background: none;
 }
 
-.post-content h2,
-.post-content h3 {
-  color: #f29f05;
-  display: table;
-  border-bottom: 3px solid #a6a6a6;
-  margin-bottom: 0.5rem;
-  letter-spacing: 1.5px;
+p > code {
+  font-family: 'Fira Code', monospace;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0 5px;
+}
+
+pre::-webkit-scrollbar {
+  height: 5px;
+}
+pre::-webkit-scrollbar-track {
+  background: var(--shadow);
+}
+pre::-webkit-scrollbar-thumb {
+  background: var(--shadow);
+  border-radius: 1rem;
+}
+pre::-webkit-scrollbar-thumb:hover {
+  background: var(--link);
 }

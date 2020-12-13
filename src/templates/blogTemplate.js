@@ -16,13 +16,9 @@ export default function Template({ data }) {
       <div className="post-body">
         <h1>{frontmatter.title}</h1>
         <span className="date">
-          On
-          {' '}
-          <em>{frontmatter.date}</em>
+          {frontmatter.date}
         </span>
         <p className="author">
-          <em>By</em>
-          {' '}
           Shafi Rayhan
         </p>
         <div
