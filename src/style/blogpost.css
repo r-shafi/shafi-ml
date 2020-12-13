@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 .post-body {
   width: 1000px;
@@ -39,35 +39,7 @@ p.author {
   border-bottom: 1px solid var(--shadow);
 }
 
-pre {
-  background: var(--shadow);
-  overflow: auto;
-  font-size: 1.1rem;
-  padding: 1rem;
-  font-family: 'Fira Code', monospace;
-}
-
-pre > code {
-  font-family: 'Fira Code', monospace;
-  background: none;
-}
-
-p > code {
-  font-family: 'Fira Code', monospace;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 0 5px;
-}
-
-pre::-webkit-scrollbar {
-  height: 5px;
-}
-pre::-webkit-scrollbar-track {
-  background: var(--shadow);
-}
-pre::-webkit-scrollbar-thumb {
-  background: var(--shadow);
-  border-radius: 1rem;
-}
-pre::-webkit-scrollbar-thumb:hover {
-  background: var(--link);
+pre code {
+  --deckgo-highlight-code-font-family: 'Source Code Pro', monospace;
+  --deckgo-highlight-code-font-size: 18px;
 }
