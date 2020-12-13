@@ -12,7 +12,16 @@ module.exports = {
         name: 'blog-posts',
       },
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-highlight-code',
+          },
+        ],
+      },
+    },
   ],
   flags: {
     PRESERVE_WEBPACK_CACHE: true,
