@@ -40,6 +40,12 @@ p.author {
 }
 
 pre code {
-  --deckgo-highlight-code-font-family: 'Source Code Pro', monospace;
-  --deckgo-highlight-code-font-size: 18px;
+  /* --deckgo-highlight-code-font-family: 'Source Code Pro', monospace;
+  --deckgo-highlight-code-font-size: 18px; */
+}
+
+p > code {
+  background: rgba(0, 0, 0, 0.1);
+  color: gold;
+  padding: 0 5px;
 }
