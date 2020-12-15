@@ -39,6 +39,11 @@ p.author {
   border-bottom: 1px solid var(--shadow);
 }
 
+pre {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+}
+
 pre code {
   /* --deckgo-highlight-code-font-family: 'Source Code Pro', monospace;
   --deckgo-highlight-code-font-size: 18px; */
