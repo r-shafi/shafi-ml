@@ -6,7 +6,7 @@ import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/
 import Base from '../components/base';
 import Head from '../components/head';
 
-import '../style/blogpost.css';
+import blogCSS from '../style/blogPost.module.css';
 
 deckDeckGoHighlightElement();
 
@@ -17,16 +17,12 @@ export default function Template({ data }) {
   return (
     <Base>
       <Head title={frontmatter.title} description={frontmatter.info} />
-      <div className="post-body">
-        <h1>{frontmatter.title}</h1>
-        <span className="date">
+      <div className={blogCSS.postContainer}>
+        <h1 className={blogCSS.title}>{frontmatter.title}</h1>
+        <p className={blogCSS.date}>
           {frontmatter.date}
-        </span>
-        <p className="author">
-          Shafi Rayhan
         </p>
         <div
-          className="post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
