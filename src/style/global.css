@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Reem+Kufi&display=swap');
 
 :root {
-  --background: #24292f;
-  --title: #ff6768;
-  --text: #ffffff;
-  --link: #ff7c7d;
+  --background: #2f3542;
+  --title: #ff4757;
+  --text: #dfe4ea;
+  --link: #ff6b81;
   --shadow: rgba(0, 0, 0, 0.4);
 }
 
