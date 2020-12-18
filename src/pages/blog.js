@@ -1,11 +1,20 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import PostLink from '../components/postlink';
+import { Link, graphql } from 'gatsby';
 
 import Base from '../components/base';
 import Head from '../components/head';
 
-import '../style/blog.css';
+import blog from '../style/blog.module.css';
+
+const PostLink = ({ post }) => (
+  <Link to={post.frontmatter.slug} className={blog.link}>
+    <div className={blog.post}>
+      <h1>{post.frontmatter.title}</h1>
+      <p className={blog.date}>{post.frontmatter.date}</p>
+      <p className={blog.description}>{post.frontmatter.info}</p>
+    </div>
+  </Link>
+);
 
 export default function Blog({
   data: {
@@ -19,7 +28,7 @@ export default function Blog({
   return (
     <Base>
       <Head title="Blog" />
-      <div className="posts-grid">{Posts}</div>
+      <div className={blog.container}>{Posts}</div>
     </Base>
   );
 }

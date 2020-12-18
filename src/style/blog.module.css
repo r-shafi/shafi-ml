@@ -1,0 +1,46 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.link {
+  text-decoration: none;
+  outline: none;
+}
+
+.post {
+  min-width: 350px;
+  max-height: 200px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  overflow: hidden;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.link:hover > .post,
+.link:focus > .post {
+  border-color: #c4e538;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.post:hover,
+.post:focus {
+  border-color: #c4e538;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.date {
+  margin: -5px 0;
+  font-size: 16px;
+  color: #c4e538;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 15px;
+}
