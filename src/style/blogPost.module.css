@@ -60,3 +60,9 @@ p a:hover,
 p a:focus {
   color: #0be881;
 }
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+}
