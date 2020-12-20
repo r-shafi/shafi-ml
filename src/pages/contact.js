@@ -1,12 +1,13 @@
 import React from 'react';
-import axios from 'axios';
 
 import Base from '../components/base';
 import Head from '../components/head';
 
 import '../style/contact.css';
 
-const emailRegex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+const encode = (data) => Object.keys(data)
+  .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+  .join('&');
 
 function About() {
   return (
@@ -66,11 +67,13 @@ class ContactForm extends React.Component {
   }
 
   handleSubmit(e) {
-    axios.post('/', {
+    fetch('/', {
       method: 'POST',
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      data: JSON.stringify(this.state),
-    }).then(response => console.log(response)).catch(error => console.log(error))
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...this.state }),
+    })
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error));
   }
 
   handleChange(e) {
@@ -82,13 +85,13 @@ class ContactForm extends React.Component {
     return (
       <main className="form">
         <form
-          name="message"
+          name="contact"
           method="POST"
           onSubmit={this.handleSubmit}
           data-netlify="true"
           action="/submission"
         >
-          <input type="hidden" name="form-name" value="message" />
+          <input type="hidden" name="form-name" value="contact" />
           <label htmlFor="name">
             Name:
             <input
