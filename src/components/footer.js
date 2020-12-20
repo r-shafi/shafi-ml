@@ -1,5 +1,7 @@
 import React from 'react';
 
+import footerCSS from '../style/footer.module.css';
+
 import twitter from '../media/twitter.svg';
 import whatsapp from '../media/whatsapp.svg';
 import facebook from '../media/facebook.svg';
@@ -32,7 +34,7 @@ const links = [
 export default function Footer() {
   return (
     <footer>
-      <div className="text">
+      <div className={footerCSS.text}>
         <p>Created by Shafi Rayhan</p>
         <p>
           &copy;
@@ -40,7 +42,7 @@ export default function Footer() {
           {new Date().getFullYear()}
         </p>
       </div>
-      <div className="social">
+      <div className={footerCSS.social}>
         {links.map((obj, i) => (
           <a href={obj.link} key={i} rel="noreferrer" target="_blank">
             <img src={obj.image} alt="" />

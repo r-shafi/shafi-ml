@@ -1,6 +1,6 @@
 ---
 slug: '/blog/create-array-months-javascript'
-date: '2020-12-18'
+date: '2020-12-19'
 title: 'Create an Array of Months with JavaScript'
 info: 'How to create an Array of Months with JavaScript'
 ---

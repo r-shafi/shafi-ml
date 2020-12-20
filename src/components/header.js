@@ -2,35 +2,37 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Media from 'react-media';
 
+import headerCSS from '../style/header.module.css';
+
 import menu from '../media/menu.svg';
 
 function toggleMenu() {
-  document.querySelector('.sidebar').classList.toggle('sidebar-open');
+  document.querySelector('#mobileNav').classList.toggle(`${headerCSS.sidebarOpen}`);
 }
 
 function toggleMenuKeyboard(e) {
   if (e.code === 'Enter') {
-    document.querySelector('.sidebar').classList.toggle('sidebar-open');
+    document.querySelector('#mobileNav').classList.toggle(`${headerCSS.sidebarOpen}`);
   }
 }
 
 function handleClose(e) {
   if (e.code === 'Escape') {
-    document.querySelector('.sidebar').classList.remove('sidebar-open');
+    document.querySelector('#mobileNav').classList.remove(`${headerCSS.sidebarOpen}`);
   }
 }
 
 function FullNavigation() {
   return (
-    <nav className="full-navigation">
-      <Link to="/" activeClassName="active-page">
+    <nav className={headerCSS.fullNavigation}>
+      <Link to="/" activeClassName={headerCSS.activePage}>
         Home
       </Link>
-      <Link to="/blog" activeClassName="active-page">Blog</Link>
-      <Link to="/works" activeClassName="active-page">
+      <Link to="/blog" activeClassName={headerCSS.activePage}>Blog</Link>
+      <Link to="/works" activeClassName={headerCSS.activePage}>
         Works
       </Link>
-      <Link to="/contact" activeClassName="active-page">
+      <Link to="/contact" activeClassName={headerCSS.activePage}>
         Contact
       </Link>
     </nav>
@@ -43,12 +45,13 @@ function MobileNavigation() {
       <img
         src={menu}
         alt="toggle menu"
-        className="burger"
+        name="menuButton"
+        className={headerCSS.burger}
         onClick={toggleMenu}
         onKeyDown={toggleMenuKeyboard}
         tabIndex="0"
       />
-      <nav className="sidebar" onKeyDown={handleClose}>
+      <nav className={headerCSS.sidebar} onKeyDown={handleClose} id="mobileNav">
         <Link to="/">Home</Link>
         <Link to="/blog">Blog</Link>
         <Link to="/works">Works</Link>
@@ -70,12 +73,12 @@ export default function Header() {
         mobile: '(max-width: 750px)',
       }}
       >
-        {(matches) => 
+        {(matches) => (
           <>
             {matches.desktop && <FullNavigation />}
             {matches.mobile && <MobileNavigation />}
           </>
-        }
+        )}
       </Media>
     </header>
   );
