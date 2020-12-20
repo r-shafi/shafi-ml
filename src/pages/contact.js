@@ -3,7 +3,7 @@ import React from 'react';
 import Base from '../components/base';
 import Head from '../components/head';
 
-import profileImage from '../media/favicon.svg';
+import displayImage from '../media/favicon.svg';
 
 import '../style/contact.css';
 
@@ -14,7 +14,7 @@ const encode = (data) => Object.keys(data)
 function About() {
   return (
     <div className="about">
-      <img src={profileImage} alt="profile" />
+      <img src={displayImage} alt="profile" />
       <h2>Shafi Rayhan</h2>
       <p>Front End Web Developer</p>
       <section className="details">
@@ -74,8 +74,8 @@ class ContactForm extends React.Component {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...this.state }),
     })
-      .then(() => alert('Success!'))
-      .catch((error) => alert(error));
+      .then((res) => console.log(res))
+      .catch((error) => console.log(error));
 
     e.preventDefault();
   }
