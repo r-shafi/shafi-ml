@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import favicon from '../media/favicon.png';
 
 export default function Head({ title, description }) {
   const defaultMetaDescription = 'Shafi Rayhan, Front End Web Developer and Designer from Sylhet, Bangladesh. The best website developer in Sylhet!';
@@ -13,6 +14,7 @@ export default function Head({ title, description }) {
         | Shafi Rayhan
       </title>
       <meta name="description" content={!description ? defaultMetaDescription : description} />
+      <link rel="shortcut icon" href={favicon} type="image/ico" />
     </Helmet>
   );
 }
