@@ -3,12 +3,18 @@ import React from 'react';
 import Base from '../components/base';
 import Head from '../components/head';
 
+import profileImage from '../media/favicon.svg';
+
 import '../style/contact.css';
+
+const encode = (data) => Object.keys(data)
+  .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+  .join('&');
 
 function About() {
   return (
     <div className="about">
-      <img src="https://picsum.photos/200" alt="profile" />
+      <img src={profileImage} alt="profile" />
       <h2>Shafi Rayhan</h2>
       <p>Front End Web Developer</p>
       <section className="details">
@@ -51,12 +57,12 @@ function About() {
 }
 
 class ContactForm extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       name: '',
       email: '',
-      msg: '',
+      message: '',
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -66,10 +72,12 @@ class ContactForm extends React.Component {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: JSON.stringify(this.state),
+      body: encode({ 'form-name': 'contact', ...this.state }),
     })
-      .then((response) => console.log(response))
-      .catch((error) => console.log(error));
+      .then(() => alert('Success!'))
+      .catch((error) => alert(error));
+
+    e.preventDefault();
   }
 
   handleChange(e) {
@@ -77,7 +85,7 @@ class ContactForm extends React.Component {
   }
 
   render() {
-    const { name, email, msg } = this.state;
+    const { name, email, message } = this.state;
     return (
       <main className="form">
         <form
@@ -115,9 +123,9 @@ class ContactForm extends React.Component {
             Message:
             <textarea
               required
-              id="msg"
+              id="message"
               onChange={this.handleChange}
-              value={msg}
+              value={message}
             />
           </label>
 
