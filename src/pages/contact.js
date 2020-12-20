@@ -5,10 +5,6 @@ import Head from '../components/head';
 
 import '../style/contact.css';
 
-const encode = (data) => Object.keys(data)
-  .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-  .join('&');
-
 function About() {
   return (
     <div className="about">
@@ -70,7 +66,7 @@ class ContactForm extends React.Component {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...this.state }),
+      body: JSON.stringify(this.state),
     })
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
