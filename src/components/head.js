@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import favicon from '../media/favicon.png';
+import favicon from '../media/favicon.svg';
 
 export default function Head({ title, description }) {
   const defaultMetaDescription = 'Shafi Rayhan, Front End Web Developer and Designer from Sylhet, Bangladesh. The best website developer in Sylhet!';
