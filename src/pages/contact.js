@@ -1,4 +1,5 @@
 import React from 'react';
+import { navigate } from 'gatsby';
 
 import Base from '../components/base';
 import Head from '../components/head';
@@ -6,10 +7,6 @@ import Head from '../components/head';
 import profileImage from '../media/favicon.svg';
 
 import '../style/contact.css';
-
-const encode = (data) => Object.keys(data)
-  .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-  .join('&');
 
 function About() {
   return (
@@ -64,20 +61,7 @@ class ContactForm extends React.Component {
       email: '',
       message: '',
     };
-    this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
-  }
-
-  handleSubmit(e) {
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...this.state }),
-    })
-      .then(() => alert('Success!'))
-      .catch((error) => alert(error));
-
-    e.preventDefault();
   }
 
   handleChange(e) {
@@ -91,17 +75,16 @@ class ContactForm extends React.Component {
         <form
           name="contact"
           method="POST"
-          onSubmit={this.handleSubmit}
           data-netlify="true"
-          action="/submission"
+          action="https://getform.io/f/41699d4b-d123-4239-929b-5612601d261f"
         >
-          <input type="hidden" name="form-name" value="contact" />
           <label htmlFor="name">
             Name:
             <input
               required
               type="text"
               id="name"
+              name="name"
               onChange={this.handleChange}
               value={name}
             />
@@ -113,6 +96,7 @@ class ContactForm extends React.Component {
               required
               type="email"
               id="email"
+              name="email"
               onChange={this.handleChange}
               value={email}
             />
@@ -124,6 +108,7 @@ class ContactForm extends React.Component {
             <textarea
               required
               id="message"
+              name="message"
               onChange={this.handleChange}
               value={message}
             />

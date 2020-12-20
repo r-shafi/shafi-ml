@@ -3,7 +3,8 @@ import React from 'react';
 import Base from '../components/base';
 import Head from '../components/head';
 
-export default function Submission() {
+export default function Submission({ location }) {
+  console.log(location);
   return (
     <Base>
       <Head title="Success" />
