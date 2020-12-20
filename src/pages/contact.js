@@ -67,7 +67,7 @@ class ContactForm extends React.Component {
 
   handleSubmit(e) {
     const axiosOptions = {
-      url: this.props.location.pathname,
+      url: '/',
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       data: JSON.stringify(this.state),
