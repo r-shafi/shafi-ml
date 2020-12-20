@@ -69,8 +69,8 @@ class ContactForm extends React.Component {
     axios.post('/', {
       method: 'POST',
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: JSON.stringify(this.state),
-    })
+      data: JSON.stringify(this.state),
+    }).then(response => console.log(response)).catch(error => console.log(error))
   }
 
   handleChange(e) {
