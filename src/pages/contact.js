@@ -1,4 +1,6 @@
 import React from 'react';
+import axios from 'axios';
+
 import Base from '../components/base';
 import Head from '../components/head';
 
@@ -64,15 +66,16 @@ class ContactForm extends React.Component {
   }
 
   handleSubmit(e) {
-    if (!this.state.email.match(emailRegex)) {
-      e.preventDefault();
-      document.querySelector('.error').style.display = 'block';
-      setTimeout(() => {
-        document.querySelector('.error').style.display = 'none';
-      }, 3000);
-    } else {
-      return true;
-    }
+    const axiosOptions = {
+      url: this.props.location.pathname,
+      method: 'post',
+      headers: { 'Content-Type': 'application/json' },
+      data: JSON.stringify(this.state),
+    };
+
+    axios(axiosOptions)
+      .then((response) => console.log(response))
+      .catch((err) => console.log(err));
   }
 
   handleChange(e) {
@@ -83,7 +86,14 @@ class ContactForm extends React.Component {
     const { name, email, msg } = this.state;
     return (
       <main className="form">
-        <form onSubmit={this.handleSubmit} name="message" data-netlify="true">
+        <form
+          name="message"
+          method="POST"
+          onSubmit={this.handleSubmit}
+          data-netlify="true"
+          action="/submission"
+        >
+          <input type="hidden" name="form-name" value="message" />
           <label htmlFor="name">
             Name:
             <input

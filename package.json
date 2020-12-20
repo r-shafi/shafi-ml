@@ -19,6 +19,7 @@
   "homepage": "https://github.com/r-shafi/shafi-ml#readme",
   "dependencies": {
     "@deckdeckgo/highlight-code": "^2.2.2",
+    "axios": "^0.21.0",
     "gatsby": "^2.25.3",
     "gatsby-plugin-react-helmet": "^3.5.0",
     "gatsby-remark-highlight-code": "^2.1.1",
