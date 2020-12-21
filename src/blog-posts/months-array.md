@@ -38,7 +38,7 @@ console.log(arr);
 // [undefined, undefined, undefined, undefined, undefined]
 ```
 
-### `Array.from`s Map Function
+### `Array.from` Map Function
 
 `Array.from` can take in multiple parameters. While the **array-like** or **iterable object** is necessary, we can also pass along an optional `map function`. The `map function` iterates over the newly created arrays items.
 

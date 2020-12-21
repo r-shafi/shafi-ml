@@ -2,7 +2,7 @@ import React from 'react';
 import Base from '../components/base';
 import Head from '../components/head';
 
-import '../style/works.css';
+import style from '../style/works.module.css';
 
 const links = [
 
@@ -86,7 +86,7 @@ export default function Works() {
   return (
     <Base>
       <Head title="Works" />
-      <div className="works">
+      <div className={style.works}>
         {links.map((obj, i) => (
           <a href={obj.link} key={i} target="_blank" rel="noreferrer">
             {obj.title}

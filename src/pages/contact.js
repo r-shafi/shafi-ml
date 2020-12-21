@@ -1,20 +1,19 @@
 import React from 'react';
-import { navigate } from 'gatsby';
 
 import Base from '../components/base';
 import Head from '../components/head';
 
 import profileImage from '../media/favicon.svg';
 
-import '../style/contact.css';
+import style from '../style/contact.module.css';
 
 function About() {
   return (
-    <div className="about">
-      <img src={profileImage} alt="profile" />
+    <div className={style.about}>
+      <img src={profileImage} alt="Shafi" />
       <h2>Shafi Rayhan</h2>
       <p>Front End Web Developer</p>
-      <section className="details">
+      <section className={style.details}>
         <p>
           I am studying Power Engineering at
           {' '}
@@ -37,7 +36,7 @@ function About() {
           {' '}
           listening to music.
         </p>
-        <section className="skills">
+        <section className={style.skills}>
           <h3>Skills</h3>
           <ul>
             <li>HTML</li>
@@ -71,7 +70,8 @@ class ContactForm extends React.Component {
   render() {
     const { name, email, message } = this.state;
     return (
-      <main className="form">
+      <div className={style.form}>
+        <h2>Contact Me!</h2>
         <form
           name="contact"
           method="POST"
@@ -101,24 +101,22 @@ class ContactForm extends React.Component {
               value={email}
             />
           </label>
-
-          <p className="error">Not a valid email</p>
-          <label htmlFor="msg">
+          <label htmlFor="message">
             Message:
             <textarea
               required
-              id="message"
+              id={style.message}
               name="message"
               onChange={this.handleChange}
               value={message}
             />
           </label>
 
-          <button type="submit" id="send">
+          <button type="submit" id={style.send}>
             Send
           </button>
         </form>
-      </main>
+      </div>
     );
   }
 }
@@ -127,7 +125,7 @@ export default function ContactPage() {
   return (
     <Base>
       <Head title="Contact" />
-      <div className="contact">
+      <div className={style.contact}>
         <About />
         <ContactForm />
       </div>

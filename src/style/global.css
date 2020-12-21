@@ -137,6 +137,13 @@ button:focus {
   }
 }
 
+li a:hover,
+li a:focus,
+p a:hover,
+p a:focus {
+  color: #0be881;
+}
+
 li {
   font-family: 'Open Sans', sans-serif;
   list-style-type: circle;

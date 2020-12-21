@@ -1,0 +1,24 @@
+.works {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.works a {
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--title);
+  color: var(--title);
+  background: rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.works a:hover,
+.works a:focus {
+  background: none;
+}
