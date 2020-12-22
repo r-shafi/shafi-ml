@@ -78,6 +78,7 @@
 .form label {
   display: table;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .form input,
@@ -92,7 +93,6 @@
 #message {
   height: 120px;
   resize: none;
-  width: 104%;
 }
 
 #send {

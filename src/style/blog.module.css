@@ -7,6 +7,9 @@
 .link {
   text-decoration: none;
   outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .post {
@@ -36,7 +39,7 @@
 }
 
 .date {
-  margin: -5px 0;
+  margin: -5px 0 5px;
   font-size: 16px;
   color: #c4e538;
 }
@@ -47,4 +50,13 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   font-size: 15px;
+}
+
+@media (max-width: 750px) {
+  .post {
+    width: 90%;
+  }
+  .post h1 {
+    font-size: 30px;
+  }
 }
