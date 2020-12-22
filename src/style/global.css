@@ -162,3 +162,14 @@ li {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--title);
 }
+
+.fourimage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fourimage img {
+  max-height: 80vh;
+}
