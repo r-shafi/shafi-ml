@@ -1,7 +1,7 @@
-.container {
+.posts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .link {
@@ -13,50 +13,52 @@
 }
 
 .post {
-  min-width: 350px;
+  width: 100%;
   height: 200px;
-  background: rgba(0, 0, 0, 0.2);
   padding: 1rem;
   overflow: hidden;
-  border: 2px solid rgba(0, 0, 0, 0.1);
   outline: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  background: var(--ls);
+  border: 2px solid var(--purple);
+}
+
+.post h1 {
+  color: var(--purple);
+  font-size: 2rem;
 }
 
 .link:hover > .post,
 .link:focus > .post {
-  border-color: #c4e538;
-  background: rgba(0, 0, 0, 0.4);
+  border-color: var(--pink);
+  background: var(--ds);
 }
 
-.post:hover,
-.post:focus {
-  border-color: #c4e538;
-  background: rgba(0, 0, 0, 0.4);
+.link:hover > .post h1,
+.link:focus > .post h1 {
+  color: var(--pink);
 }
 
 .date {
-  margin: -5px 0 5px;
-  font-size: 16px;
-  color: #c4e538;
+  color: var(--green);
 }
 
 .description {
+  color: var(--white);
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  font-size: 15px;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 750px) {
-  .post {
-    width: 90%;
-  }
-  .post h1 {
-    font-size: 30px;
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
   }
 }

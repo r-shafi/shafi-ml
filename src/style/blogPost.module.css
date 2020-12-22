@@ -1,85 +1,51 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .postContainer {
   width: 1000px;
   max-width: 90vw;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
   background: rgba(0, 0, 0, 0.1);
   padding: 2rem;
   border-radius: 10px;
 }
 
-.postContainer .title {
-  font-size: 4rem;
-  max-width: 100%;
-}
-
-.postContainer .date {
-  color: #1e90ff;
+.date {
+  display: table;
+  color: var(--pink);
+  padding-bottom: 0.25rem;
   margin-bottom: 1rem;
+  border-bottom: 1px solid var(--pink);
 }
 
 .postContainer p {
-  margin: 0.7rem 0;
-  font-size: 1.1rem;
-}
-
-.postContainer h2 {
-  margin-top: 1rem;
-  font-size: 3rem;
-}
-.postContainer h3 {
-  margin-top: 1rem;
-  font-size: 2.5rem;
-}
-.postContainer h4 {
-  margin-top: 1rem;
-  font-size: 2rem;
-}
-
-.postContainer p > code {
-  color: #eccc68;
-  background: rgba(0, 0, 0, 0.1);
-  padding: 0 5px;
-  font-family: monospace;
-  max-width: 100%;
+  margin: 0.5rem 0;
 }
 
 .postContainer li {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
+  margin-bottom: 0.5rem;
+}
+
+.postContainer h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.postContainer h3 {
+  margin-top: 1.5rem;
+}
+
+.postContainer h4 {
+  margin-top: 1rem;
+}
+
+.postContainer p code {
+  font-family: monospace;
+  font-size: 1.3rem;
+  color: var(--yellow);
+  background: var(--ls);
+  padding: 0 0.25rem;
 }
 
 .postContainer img {
   display: block;
   margin: auto;
-  max-width: 80%;
-}
-
-.postContainer blockquote {
-  background: rgba(0, 0, 0, 0.1);
-  padding: 0.5rem 1rem;
-  border-left: 3px solid #0be881;
-  margin: 0.5rem 0;
-}
-
-.postContainer blockquote p {
-  font-size: 1.2rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-@media (max-width: 750px) {
-  .postContainer .title {
-    font-size: 3rem;
-    max-width: 100%;
-  }
-
-  .postContainer {
-    padding: 2rem 0.5rem;
-  }
+  max-width: 90%;
 }

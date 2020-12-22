@@ -112,7 +112,7 @@ class ContactForm extends React.Component {
             />
           </label>
 
-          <button type="submit" id={style.send}>
+          <button type="submit">
             Send
           </button>
         </form>

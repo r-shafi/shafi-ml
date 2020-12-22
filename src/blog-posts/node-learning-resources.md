@@ -11,7 +11,7 @@ Here are all of the quality Node learning resources I found during my quest for 
 
 <div class="mb2"></div>
 
-### Documentations
+## Documentations
 
 - [Express/Node introduction | MDN](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction)
 - [Full Stack Open](https://fullstackopen.com/en/)
@@ -24,7 +24,7 @@ Here are all of the quality Node learning resources I found during my quest for 
 
 <div class="mb2"></div>
 
-### YouTube Tutorials
+## YouTube Tutorials
 
 - [Node JS Tutorial for Beginners | The Net Ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp)
 - [Node.js Tutorial for Beginners: Learn Node in 1 Hour | Mosh](https://www.youtube.com/watch?v=TlB_eWDSMt4&t=831s)
@@ -35,7 +35,7 @@ Here are all of the quality Node learning resources I found during my quest for 
 
 <div class="mb2"></div>
 
-### Paid Courses
+## Paid Courses
 
 - [The Complete Node.js Developer Course (3rd Edition) | Andrew Mead](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/)
 

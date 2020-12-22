@@ -18,7 +18,7 @@ export default function Template({ data }) {
     <Base>
       <Head title={frontmatter.title} description={frontmatter.info} />
       <div className={blogCSS.postContainer}>
-        <h1 className={blogCSS.title}>{frontmatter.title}</h1>
+        <h1>{frontmatter.title}</h1>
         <p className={blogCSS.date}>
           {frontmatter.date}
         </p>

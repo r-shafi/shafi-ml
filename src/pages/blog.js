@@ -28,7 +28,7 @@ export default function Blog({
   return (
     <Base>
       <Head title="Blog" />
-      <div className={blog.container}>{Posts}</div>
+      <div className={blog.posts}>{Posts}</div>
     </Base>
   );
 }

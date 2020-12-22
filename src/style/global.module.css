@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lobster+Two&display=swap');
+
+:root {
+  --black: #1e272e;
+  --white: #d2dae2;
+  --green: #0be881;
+  --pink: #ef5777;
+  --purple: #575fcf;
+  --red: #ff3f34;
+  --yellow: #ffdd59;
+  --sky: #4bcffa;
+  --ls: rgba(0, 0, 0, 0.2);
+  --ds: rgba(0, 0, 0, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lobster Two', cursive;
+  color: var(--green);
+}
+
+a {
+  color: var(--red);
+  font-size: 1.2rem;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: var(--sky);
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0.25rem 0;
+}
+
+li {
+  list-style: circle;
+  list-style-position: inside;
+  font-size: 1.1rem;
+}
+
+button {
+  display: table;
+  background: var(--red);
+  color: var(--text);
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+button:focus,
+button:hover {
+  background: var(--purple);
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+}
+
+.container {
+  width: 90vw;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
