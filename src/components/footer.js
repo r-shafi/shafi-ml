@@ -7,6 +7,7 @@ import whatsapp from '../media/whatsapp.svg';
 import facebook from '../media/facebook.svg';
 import messenger from '../media/messenger.svg';
 import github from '../media/github.svg';
+import ig from '../media/ig.svg';
 
 const links = [
   {
@@ -28,6 +29,10 @@ const links = [
   {
     image: github,
     link: 'https://github.com/r-shafi',
+  },
+  {
+    image: ig,
+    link: 'https://www.instagram.com/shafiemoji',
   },
 ];
 
