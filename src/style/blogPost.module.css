@@ -2,17 +2,17 @@
   width: 1000px;
   max-width: 90vw;
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.1);
+  background: var(--ls);
   padding: 2rem;
   border-radius: 10px;
 }
 
 .date {
   display: table;
-  color: var(--red);
+  color: var(--link);
   padding-bottom: 0.25rem;
   margin-bottom: 1rem;
-  border-bottom: 1px solid var(--red);
+  border-bottom: 1px solid var(--link);
 }
 
 .postContainer p {
@@ -37,8 +37,7 @@
 }
 
 .postContainer p code {
-  color: var(--purple);
-  background: var(--ws);
+  color: var(--secondary);
   padding: 0 0.25rem;
   font-family: 'Roboto Mono', monospace;
   font-size: 0.95rem;
@@ -54,27 +53,30 @@
   margin: 1rem 0;
   background: var(--ws);
   padding: 0.25rem 1rem;
-  border-left: 3px solid var(--red);
-  text-shadow: 0 0 10px var(--ds);
+  border-left: 3px solid var(--secondary);
 }
 
 .postContainer pre {
-  margin: 1rem 0;
-  font-size: 1rem;
-  background: #2f3640;
+  background: #0f1928;
 }
 
 .postContainer pre::-webkit-scrollbar {
-  height: 4px;
+  height: 3px;
 }
 .postContainer pre::-webkit-scrollbar-track {
   background: var(--ls);
   border-radius: 1rem;
 }
 .postContainer pre::-webkit-scrollbar-thumb {
-  background: var(--green);
+  background: var(--title);
   border-radius: 1rem;
 }
 .postContainer pre::-webkit-scrollbar-thumb:hover {
-  background: var(--red);
+  background: var(--link);
+}
+
+@media (max-width: 750px) {
+  .postContainer {
+    padding: 2rem 1rem;
+  }
 }

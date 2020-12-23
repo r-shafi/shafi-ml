@@ -18,7 +18,7 @@
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  border: 3px solid var(--white);
+  border: 3px solid var(--ls);
 }
 
 .about h2 {

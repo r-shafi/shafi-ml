@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import Base from '../components/base';
 import Head from '../components/head';
 
+import '../style/cblock.css';
 import blogCSS from '../style/blogPost.module.css';
 
 export default function Template({ data }) {

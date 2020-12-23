@@ -20,7 +20,7 @@ footer {
 
 .social a:hover,
 .social a:focus {
-  background: var(--red);
+  background: var(--title);
 }
 
 .social a img {

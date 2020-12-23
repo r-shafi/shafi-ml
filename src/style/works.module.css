@@ -12,9 +12,7 @@
   align-items: center;
   text-align: center;
   text-decoration: none;
-  background: var(--ls);
-  color: var(--white);
-  border: 2px solid var(--white);
+  background: var(--ds);
   transition: 0.2s;
   font-size: 1.3rem;
   border-radius: 10px;
@@ -22,7 +20,18 @@
 
 .works a:hover,
 .works a:focus {
-  background: var(--ds);
-  color: var(--red);
-  border-color: var(--red);
+  background: linear-gradient(90deg, var(--title), var(--link));
+  color: var(--dark);
+  background-size: 300%;
+  background-position: left;
+  animation: flow 5s infinite alternate;
+}
+
+@keyframes flow {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
 }

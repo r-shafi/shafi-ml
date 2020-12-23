@@ -18,7 +18,7 @@ module.exports = {
         plugins: [{
           resolve: 'gatsby-remark-vscode',
           options: {
-            theme: 'Monokai',
+            theme: 'Visual Studio Light',
           },
         }],
       },

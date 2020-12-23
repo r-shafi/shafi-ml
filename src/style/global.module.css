@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto+Mono:wght@400&display=swap');
 
 :root {
-  --black: #1e272e;
-  --white: #d2dae2;
-  --green: #0be881;
-  --purple: #575fcf;
-  --red: #ff3f34;
-  --ls: rgba(0, 0, 0, 0.2);
-  --ds: rgba(0, 0, 0, 0.4);
-  --ws: rgba(255, 255, 255, 0.05);
+  --dark: #2f3640;
+  --light: #c8d6e5;
+  --title: #ff4757;
+  --link: #70a1ff;
+  --secondary: #c4e538;
+  --ls: rgba(0, 0, 0, 0.1);
+  --ds: rgba(0, 0, 0, 0.5);
+  --ws: rgba(255, 255, 255, 0.1);
 }
 
 * {
@@ -25,23 +25,27 @@ h4,
 h5,
 h6 {
   font-family: 'Roboto Mono', monospace;
-  color: var(--green);
+  color: var(--title);
 }
 
 a {
-  color: var(--red);
+  color: var(--link);
   font-size: 1.2rem;
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
-  color: var(--purple);
+  color: var(--secondary);
 }
 
 p {
   font-size: 1.2rem;
   margin: 0.25rem 0;
+}
+
+strong {
+  text-shadow: 0 0 5px var(--ls);
 }
 
 li {
@@ -52,8 +56,8 @@ li {
 
 button {
   display: table;
-  background: var(--red);
-  color: var(--text);
+  background: var(--title);
+  color: var(--light);
   padding: 0.5rem 1rem;
   margin: 0.5rem 0;
   font-weight: bold;
@@ -65,12 +69,12 @@ button {
 
 button:focus,
 button:hover {
-  background: var(--purple);
+  background: var(--link);
 }
 
 body {
-  background: var(--black);
-  color: var(--white);
+  background: var(--dark);
+  color: var(--light);
 }
 
 .container {
@@ -96,8 +100,8 @@ body {
   background: var(--ds);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--green);
+  background: var(--title);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--red);
+  background: var(--link);
 }
