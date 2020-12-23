@@ -15,14 +15,12 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-highlight-code',
-            options: {
-              theme: 'dracula',
-            },
+        plugins: [{
+          resolve: 'gatsby-remark-vscode',
+          options: {
+            theme: 'Monokai',
           },
-        ],
+        }],
       },
     },
   ],

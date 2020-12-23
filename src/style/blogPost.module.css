@@ -57,3 +57,24 @@
   border-left: 3px solid var(--red);
   text-shadow: 0 0 10px var(--ds);
 }
+
+.postContainer pre {
+  margin: 1rem 0;
+  font-size: 1rem;
+  background: #2f3640;
+}
+
+.postContainer pre::-webkit-scrollbar {
+  height: 4px;
+}
+.postContainer pre::-webkit-scrollbar-track {
+  background: var(--ls);
+  border-radius: 1rem;
+}
+.postContainer pre::-webkit-scrollbar-thumb {
+  background: var(--green);
+  border-radius: 1rem;
+}
+.postContainer pre::-webkit-scrollbar-thumb:hover {
+  background: var(--red);
+}
