@@ -33,13 +33,13 @@
 
 .link:hover > .post,
 .link:focus > .post {
-  border-color: var(--pink);
+  border-color: var(--red);
   background: var(--ds);
 }
 
 .link:hover > .post h1,
 .link:focus > .post h1 {
-  color: var(--pink);
+  color: var(--red);
 }
 
 .date {
@@ -58,7 +58,11 @@
 @media (max-width: 750px) {
   .posts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .post h1 {
+    font-size: 1.5rem;
   }
 }

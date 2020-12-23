@@ -15,12 +15,20 @@ const links = [
     link: 'https://modest-villani-d0e72a.netlify.app/rotating-navigation/index.html',
   },
   {
+    title: 'CSS Spinner Loading',
+    link: 'https://modest-villani-d0e72a.netlify.app/css-spinner/index.html',
+  },
+  {
     title: 'Hidden Search Input',
     link: 'https://modest-villani-d0e72a.netlify.app/hidden-search-input/index.html',
   },
   {
     title: 'Blurry Loading',
     link: 'https://modest-villani-d0e72a.netlify.app/blurry-loading/index.html',
+  },
+  {
+    title: 'CSS Bouncing Balls Loading',
+    link: 'https://modest-villani-d0e72a.netlify.app/css-bouncing-balls/index.html',
   },
   {
     title: 'Face Detection (Experimental)',

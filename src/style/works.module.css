@@ -13,10 +13,11 @@
   text-align: center;
   text-decoration: none;
   background: var(--ls);
-  color: var(--sky);
-  border: 2px solid var(--sky);
+  color: var(--white);
+  border: 2px solid var(--white);
   transition: 0.2s;
   font-size: 1.3rem;
+  border-radius: 10px;
 }
 
 .works a:hover,

@@ -103,8 +103,3 @@ const months = Array.from({ length: 12 }, (item, i) => {
 console.log(months);
 // ["জানুয়ারী", "ফেব্রুয়ারী", "মার্চ", "এপ্রিল", "মে", "জুন", "জুলাই", "আগস্ট", "সেপ্টেম্বর", "অক্টোবর", "নভেম্বর", "ডিসেম্বর"]
 ```
-
----
-
-[My Website](shafi.ml)!
-[Connect with me on Twitter](twitter.com/shafiemoji)

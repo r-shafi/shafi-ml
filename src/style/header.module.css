@@ -8,7 +8,12 @@ header {
 header h1 a {
   font-size: 2rem;
   text-decoration: none;
-  font-family: 'Lobster Two', cursive;
+  font-family: 'Roboto Mono', monospace;
+  color: var(--green);
+}
+
+header h1 a:hover,
+header h1 a:focus {
   color: var(--green);
 }
 

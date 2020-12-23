@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto+Mono:wght@400&display=swap');
 
 :root {
   --black: #1e272e;
   --white: #d2dae2;
   --green: #0be881;
-  --pink: #ef5777;
   --purple: #575fcf;
   --red: #ff3f34;
-  --yellow: #ffdd59;
-  --sky: #4bcffa;
   --ls: rgba(0, 0, 0, 0.2);
   --ds: rgba(0, 0, 0, 0.4);
+  --ws: rgba(255, 255, 255, 0.05);
 }
 
 * {
@@ -26,7 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lobster Two', cursive;
+  font-family: 'Roboto Mono', monospace;
   color: var(--green);
 }
 
@@ -38,7 +36,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: var(--sky);
+  color: var(--purple);
 }
 
 p {
