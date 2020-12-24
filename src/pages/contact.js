@@ -7,6 +7,11 @@ import profileImage from '../media/favicon.svg';
 
 import style from '../style/contact.module.css';
 
+function validateEmail(email) {
+  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}
+
 function About() {
   return (
     <div className={style.about}>
@@ -61,10 +66,21 @@ class ContactForm extends React.Component {
       message: '',
     };
     this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(e) {
     this.setState({ [e.target.id]: e.target.value });
+  }
+
+  handleSubmit(e) {
+    if (!validateEmail(this.state.email)) {
+      e.preventDefault();
+      document.querySelector('#invalid').style.display = 'block';
+      setTimeout(() => {
+        document.querySelector('#invalid').style.display = 'none';
+      }, 3000);
+    }
   }
 
   render() {
@@ -75,8 +91,8 @@ class ContactForm extends React.Component {
         <form
           name="contact"
           method="POST"
-          data-netlify="true"
           action="https://getform.io/f/41699d4b-d123-4239-929b-5612601d261f"
+          onSubmit={this.handleSubmit}
         >
           <label htmlFor="name">
             Name:
@@ -101,11 +117,12 @@ class ContactForm extends React.Component {
               value={email}
             />
           </label>
+          <p className={style.invalid} id="invalid">Invalid Email!</p>
           <label htmlFor="message">
             Message:
             <textarea
               required
-              id={style.message}
+              id="message"
               name="message"
               onChange={this.handleChange}
               value={message}
