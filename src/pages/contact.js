@@ -3,7 +3,7 @@ import React from 'react';
 import Base from '../components/base';
 import Head from '../components/head';
 
-import me from '../media/me.jpg';
+import me from '../media/favicon.svg';
 
 import style from '../style/contact.module.css';
 
