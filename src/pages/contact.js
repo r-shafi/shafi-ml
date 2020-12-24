@@ -3,7 +3,7 @@ import React from 'react';
 import Base from '../components/base';
 import Head from '../components/head';
 
-import profileImage from '../media/favicon.svg';
+import me from '../media/me.jpg';
 
 import style from '../style/contact.module.css';
 
@@ -15,7 +15,7 @@ function validateEmail(email) {
 function About() {
   return (
     <div className={style.about}>
-      <img src={profileImage} alt="Shafi" />
+      <img src={me} alt="Shafi" />
       <h2>Shafi Rayhan</h2>
       <p>Front End Web Developer</p>
       <section className={style.details}>
