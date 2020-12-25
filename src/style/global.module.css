@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto+Mono:wght@400&display=swap');
 
 :root {
-  --dark: #2f3640;
+  --dark: #2f3641;
   --light: #c8d6e5;
   --title: #ff4757;
   --link: #70a1ff;
   --secondary: #c4e538;
   --ls: rgba(0, 0, 0, 0.1);
+  --ms: rgba(0, 0, 0, 0.2);
   --ds: rgba(0, 0, 0, 0.5);
   --ws: rgba(255, 255, 255, 0.1);
 }
@@ -51,7 +52,7 @@ strong {
 li {
   list-style: circle;
   list-style-position: inside;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 button {

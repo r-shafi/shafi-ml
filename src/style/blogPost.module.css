@@ -2,7 +2,7 @@
   width: 1000px;
   max-width: 90vw;
   margin: 0 auto;
-  background: var(--ls);
+  background: var(--ms);
   padding: 2rem;
   border-radius: 10px;
 }
@@ -23,24 +23,19 @@
   margin-bottom: 0.5rem;
 }
 
-.postContainer h2 {
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.postContainer h3 {
-  margin-top: 1.5rem;
-}
-
-.postContainer h4 {
-  margin-top: 1rem;
+.postContainer h2,
+h3,
+h4 {
+  margin: 1.5rem 0 0.5rem;
 }
 
 .postContainer p code {
   color: var(--secondary);
+  background: var(--ls);
   padding: 0 0.25rem;
   font-family: 'Roboto Mono', monospace;
   font-size: 0.95rem;
+  max-width: 100%;
 }
 
 .postContainer img {
@@ -58,6 +53,13 @@
 
 .postContainer pre {
   background: #0f1928;
+  margin: 1rem 0;
+}
+
+.postContainer li {
+  color: #ffffff;
+  list-style-type: disc;
+  margin: 1rem 0;
 }
 
 .postContainer pre::-webkit-scrollbar {
