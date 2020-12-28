@@ -1,0 +1,9 @@
+.button {
+  display: table;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  border-radius: 0.25rem;
+  background: var(--primary);
+  color: var(--background);
+  margin: 1rem 0;
+}
