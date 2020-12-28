@@ -9,6 +9,7 @@
   align-items: center;
   background: var(--sidebar);
   box-shadow: 0 5px 10px var(--ls);
+  z-index: 2;
 }
 
 .header a {

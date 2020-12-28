@@ -1,8 +1,9 @@
 .postContainer {
-  background: var(--ds);
+  background: var(--ls);
   padding: 1rem;
   border-radius: 1rem;
   margin: 2rem 0;
+  max-width: 100%;
 }
 
 .postContainer .date {
@@ -16,4 +17,32 @@
 .postContainer a:hover,
 .postContainer a:focus {
   color: var(--alt);
+}
+
+.postContainer p > code {
+  background: var(--ls);
+  color: var(--alt);
+  padding: 0 5px;
+  max-width: 100%;
+  font-size: 1.1rem;
+}
+
+.postContainer pre {
+  margin: 1rem 0;
+}
+
+.postContainer p {
+  color: #fdfdfd;
+}
+
+.postContainer img {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+}
+
+.postContainer li {
+  color: var(--text);
 }

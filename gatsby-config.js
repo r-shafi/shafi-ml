@@ -7,6 +7,16 @@ module.exports = {
         path: `${__dirname}/src/blog`,
       },
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [{
+          resolve: 'gatsby-remark-vscode',
+          options: {
+            theme: 'Abyss',
+          },
+        }],
+      },
+    },
   ],
 };
