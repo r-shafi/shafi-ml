@@ -1,0 +1,43 @@
+.blogContainer {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.post {
+  background: var(--ls);
+  padding: 1rem 2rem;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post:hover,
+.post:focus {
+  background: var(--ds);
+}
+
+.post a {
+  text-decoration: none;
+}
+
+.post h1 {
+  font-size: 1.5rem;
+}
+
+.post .info {
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.post h1,
+.post .info {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
