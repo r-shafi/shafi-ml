@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import Footer from './footer';
+
 import style from '../styles/sidebar.module.css';
 
 export default function Sidebar() {
@@ -14,20 +16,13 @@ export default function Sidebar() {
 
       <nav className={style.navigation}>
         <Link to="/" activeClassName={style.current}>Home</Link>
-        <Link to="/about" activeClassName={style.current}>About</Link>
-        <Link to="/contact" activeClassName={style.current}>Contact</Link>
-        <Link to="/works" activeClassName={style.current}>Works</Link>
         <Link to="/blog" activeClassName={style.current}>Blog</Link>
+        <Link to="/works" activeClassName={style.current}>Works</Link>
+        <Link to="/contact" activeClassName={style.current}>Contact</Link>
+        <Link to="/about" activeClassName={style.current}>About</Link>
       </nav>
 
-      <footer>
-        <p>Created By Shafi</p>
-        <p>
-          &copy;
-          {' '}
-          {new Date().getFullYear()}
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }

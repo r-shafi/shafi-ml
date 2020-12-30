@@ -1,0 +1,23 @@
+.social {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.social a:hover,
+.social a:focus {
+  background: var(--coral);
+}
+
+.social img {
+  width: 2rem;
+}

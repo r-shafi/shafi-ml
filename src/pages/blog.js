@@ -7,13 +7,11 @@ import style from '../styles/blog.module.css';
 
 function Post({ post }) {
   return (
-    <div className={style.post}>
-      <Link to={post.frontmatter.slug}>
-        <h1>{post.frontmatter.title}</h1>
-        <p className={style.date}>{post.frontmatter.date}</p>
-        <p className={style.info}>{post.frontmatter.info}</p>
-      </Link>
-    </div>
+    <Link to={post.frontmatter.slug} className={style.post}>
+      <h1>{post.frontmatter.title}</h1>
+      <p className={style.date}>{post.frontmatter.date}</p>
+      <p className={style.info}>{post.frontmatter.info}</p>
+    </Link>
   );
 }
 

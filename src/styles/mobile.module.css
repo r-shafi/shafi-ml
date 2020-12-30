@@ -7,9 +7,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--sidebar);
-  box-shadow: 0 5px 10px var(--ls);
   z-index: 2;
+  padding: 0 5vw;
+  background: var(--black);
 }
 
 .header a {
@@ -17,19 +17,16 @@
 }
 
 .header h1 {
-  margin-left: 5vw;
   font-size: 32px;
 }
 
 .header button {
-  background: none;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 5vw;
   cursor: pointer;
-  outline: none;
+  background: none;
 }
 
 @media (min-width: 800px) {
@@ -41,37 +38,36 @@
 .nav {
   position: fixed;
   top: 50px;
+  left: 0;
   width: 100%;
-  background: var(--sidebar);
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   gap: 1rem;
-  padding: 1rem 5vw;
+  padding: 1rem;
   visibility: hidden;
-  box-shadow: 0 5px 10px var(--ls);
+  background: var(--black);
 }
 
 .nav a {
   font-size: 1.5rem;
-  color: var(--primary);
-  background: var(--ls);
   width: 100%;
   border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--wbg);
+  border: 2px solid transparent;
+  outline: none;
 }
 
 .nav a.current {
-  background: var(--primary);
-  color: var(--background);
+  color: var(--slate);
 }
 
 .nav a:hover,
 .nav a:focus {
-  color: var(--primary);
-  background: var(--ds);
+  border-color: var(--coral);
 }
 
 .show {

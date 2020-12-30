@@ -1,48 +1,89 @@
 .postContainer {
-  background: var(--ls);
   padding: 1rem;
   border-radius: 1rem;
   margin: 2rem 0;
   max-width: 100%;
 }
 
+.postContainer h1,
+.postContainer h2,
+.postContainer h3,
+.postContainer h4,
+.postContainer h5,
+.postContainer h6 {
+  margin: 1.5rem 0 0.5rem;
+}
+
 .postContainer .date {
   display: table;
-  margin-top: -0.5rem;
-  color: var(--link);
-  border-bottom: 1px solid var(--link);
-  margin-bottom: 1rem;
+  color: var(--midnight);
+  border-bottom: 1px solid var(--midnight);
+  margin: -0.5rem 0 1rem;
+}
+
+.postContainer p {
+  margin: 0.5rem 0;
 }
 
 .postContainer a:hover,
 .postContainer a:focus {
-  color: var(--alt);
+  background: var(--dbg);
+  color: var(--midnight);
 }
 
-.postContainer p > code {
-  background: var(--ls);
-  color: var(--alt);
-  padding: 0 5px;
+.postContainer li {
+  margin: 0.5rem 0;
+}
+
+.postContainer li:not(a) {
+  color: var(--midnight);
+  text-shadow: 0 0 1px var(--midnight);
+}
+
+.postContainer li a {
+  text-shadow: none;
+}
+
+.postContainer li > a:hover,
+.postContainer li > a:focus {
+  background: none;
+}
+
+.postContainer blockquote {
+  background: var(--dbg);
+  padding: 0.25rem 1rem;
+  border-left: 3px solid var(--slate);
+}
+
+.postContainer img {
+  display: block;
+  margin: 1rem auto;
   max-width: 100%;
-  font-size: 1.1rem;
+  max-height: 80vh;
+  border-radius: 5px;
 }
 
 .postContainer pre {
   margin: 1rem 0;
 }
 
-.postContainer p {
-  color: #fdfdfd;
-}
-
-.postContainer img {
+.postContainer p code {
+  font-size: 1.1rem;
   max-width: 100%;
-  max-height: 80vh;
-  display: block;
-  margin: 1rem auto;
-  border-radius: 0.5rem;
+  padding: 0 3px;
+  color: var(--midnight);
+  background: #252b4850;
 }
 
-.postContainer li {
-  color: var(--text);
+.postContainer pre::-webkit-scrollbar {
+  height: 4px;
+}
+.postContainer pre::-webkit-scrollbar-track {
+  background: var(--midnight);
+}
+.postContainer pre::-webkit-scrollbar-thumb {
+  background: var(--slate);
+}
+.postContainer pre::-webkit-scrollbar-thumb:hover {
+  background: var(--coral);
 }

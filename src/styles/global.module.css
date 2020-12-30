@@ -1,26 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
 :root {
-  --background: #1f242c;
-  --sidebar: #222831;
-  --primary: #a7ff83;
-  --link: #ff304f;
-  --alt: #00aeff;
-  --text: #fdfdfd;
-  --ls: rgba(0, 0, 0, 0.2);
-  --ds: rgba(0, 0, 0, 0.5);
+  --white: #d2d4e3;
+  --black: #04030f;
+  --midnight: #252b48;
+  --slate: #4b4aa7;
+  --coral: #f95d6e;
+  --dbg: rgba(0, 0, 0, 0.05);
+  --wbg: rgba(255, 255, 255, 0.01);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Baloo 2', cursive;
+  font-family: 'Baloo 2', monospace;
 }
 
 body {
-  background: var(--background);
-  color: var(--text);
+  background: var(--white);
+  color: var(--black);
 }
 
 h1,
@@ -29,12 +28,12 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--primary);
+  color: var(--slate);
 }
 
 a {
-  color: var(--link);
   font-size: 1.2rem;
+  color: var(--coral);
 }
 
 a:hover,
@@ -48,6 +47,7 @@ p {
 
 li {
   list-style-position: inside;
+  font-size: 1.2rem;
 }
 
 /* ! - - - - - - - ! */
@@ -76,4 +76,17 @@ li {
   .content {
     min-height: calc(100vh - 50px);
   }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--midnight);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--slate);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--coral);
 }

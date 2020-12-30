@@ -1,17 +1,18 @@
 .button {
   display: table;
-  background: var(--primary);
-  color: var(--background);
   font-size: 1.5rem;
   font-weight: bold;
-  border-radius: 0.25rem;
+  border-radius: 0.4rem;
   margin: 1rem 0;
-  padding: 0 1rem;
+  padding: 0.1rem 1rem 0;
   text-decoration: none;
+  background: var(--coral);
+  color: var(--midnight);
+  outline: none;
 }
 
 .button:hover,
 .button:focus {
-  background: var(--link);
-  color: var(--text);
+  background: var(--midnight);
+  color: var(--coral);
 }

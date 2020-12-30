@@ -7,31 +7,35 @@
 }
 
 .post {
-  background: var(--ls);
   padding: 1rem 2rem;
   width: 100%;
   height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  outline: none;
+  border: 2px solid var(--dbg);
+  text-decoration: none;
+  transition: 0.2s;
 }
 
 .post:hover,
 .post:focus {
-  background: var(--ds);
-}
-
-.post a {
-  text-decoration: none;
+  background: var(--dbg);
+  border-color: var(--slate);
 }
 
 .post h1 {
   font-size: 1.5rem;
 }
 
+.post .date {
+  color: var(--slate);
+}
+
 .post .info {
   font-size: 1rem;
-  color: var(--text);
+  color: var(--black);
 }
 
 .post h1,
