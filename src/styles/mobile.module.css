@@ -9,7 +9,7 @@
   align-items: center;
   z-index: 2;
   padding: 0 5vw;
-  background: var(--black);
+  background: var(--navigation);
 }
 
 .header a {
@@ -18,6 +18,7 @@
 
 .header h1 {
   font-size: 32px;
+  color: var(--black);
 }
 
 .header button {
@@ -56,18 +57,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--wbg);
+  background: rgba(255, 255, 255, 0.02);
   border: 2px solid transparent;
   outline: none;
 }
 
 .nav a.current {
-  color: var(--slate);
+  color: var(--navigation);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .nav a:hover,
 .nav a:focus {
-  border-color: var(--coral);
+  border-color: var(--link);
+}
+
+.nav a.current:hover,
+.nav a.current:focus {
+  border-color: var(--navigation);
 }
 
 .show {

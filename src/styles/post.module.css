@@ -16,8 +16,8 @@
 
 .postContainer .date {
   display: table;
-  color: var(--midnight);
-  border-bottom: 1px solid var(--midnight);
+  color: var(--link);
+  border-bottom: 1px solid var(--link);
   margin: -0.5rem 0 1rem;
 }
 
@@ -27,8 +27,8 @@
 
 .postContainer a:hover,
 .postContainer a:focus {
-  background: var(--dbg);
-  color: var(--midnight);
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--black);
 }
 
 .postContainer li {
@@ -36,23 +36,18 @@
 }
 
 .postContainer li:not(a) {
-  color: var(--midnight);
-  text-shadow: 0 0 1px var(--midnight);
+  color: var(--title);
+  text-shadow: 0 0 1px var(--link);
 }
 
 .postContainer li a {
   text-shadow: none;
 }
 
-.postContainer li > a:hover,
-.postContainer li > a:focus {
-  background: none;
-}
-
 .postContainer blockquote {
-  background: var(--dbg);
+  background: var(--sdbg);
   padding: 0.25rem 1rem;
-  border-left: 3px solid var(--slate);
+  border-left: 3px solid var(--link);
 }
 
 .postContainer img {
@@ -71,19 +66,19 @@
   font-size: 1.1rem;
   max-width: 100%;
   padding: 0 3px;
-  color: var(--midnight);
-  background: #252b4850;
+  color: var(--code);
+  background: var(--dbg);
 }
 
 .postContainer pre::-webkit-scrollbar {
   height: 4px;
 }
 .postContainer pre::-webkit-scrollbar-track {
-  background: var(--midnight);
+  background: var(--black);
 }
 .postContainer pre::-webkit-scrollbar-thumb {
-  background: var(--slate);
+  background: var(--navigation);
 }
 .postContainer pre::-webkit-scrollbar-thumb:hover {
-  background: var(--coral);
+  background: var(--title);
 }

@@ -1,0 +1,42 @@
+.works {
+  width: 100%;
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 2rem;
+}
+
+.works a {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text);
+  border: 3px solid var(--navigation);
+  font-size: 1.5rem;
+  text-align: center;
+  outline: none;
+}
+
+.works a:hover,
+.works a:focus {
+  background: linear-gradient(45deg, var(--title), var(--navigation));
+  background-size: 500%;
+  background-position: left;
+  color: var(--black);
+  box-shadow: 5px 5px 10px var(--sdbg);
+  transition: 0.2s;
+  animation: move 10s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}

@@ -14,15 +14,16 @@
   flex-direction: column;
   justify-content: center;
   outline: none;
-  border: 2px solid var(--dbg);
+  background: var(--dbg);
+  border: 2px solid transparent;
   text-decoration: none;
   transition: 0.2s;
 }
 
 .post:hover,
 .post:focus {
-  background: var(--dbg);
-  border-color: var(--slate);
+  border-color: var(--link);
+  background: var(--sdbg);
 }
 
 .post h1 {
@@ -30,12 +31,12 @@
 }
 
 .post .date {
-  color: var(--slate);
+  color: var(--link);
 }
 
 .post .info {
   font-size: 1rem;
-  color: var(--black);
+  color: var(--text);
 }
 
 .post h1,

@@ -1,9 +1,9 @@
 .social {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: flex-start;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .social a {
@@ -15,7 +15,7 @@
 
 .social a:hover,
 .social a:focus {
-  background: var(--coral);
+  background: var(--background);
 }
 
 .social img {

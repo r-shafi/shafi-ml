@@ -1,8 +1,9 @@
 import React from 'react';
 import Layout from '../components/layout';
 
-const links = [
+import style from '../styles/works.module.css';
 
+const links = [
   {
     title: 'Progress Steps',
     link: 'https://modest-villani-d0e72a.netlify.app/progress-steps/index.html',
@@ -88,10 +89,9 @@ const links = [
 ];
 
 export default function Works() {
-  let href;
   return (
     <Layout>
-      <div>
+      <div className={style.works}>
         {links.map((obj, i) => (
           <a href={obj.link} key={i} target="_blank" rel="noreferrer">
             {obj.title}
