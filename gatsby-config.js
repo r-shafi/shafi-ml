@@ -1,15 +1,10 @@
 module.exports = {
-  siteMetadata: {
-    title: 'Shafi Rayhan',
-    author: 'Shafi Rayhan',
-  },
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/blog-posts`,
-        name: 'blog-posts',
+        name: 'blog',
+        path: `${__dirname}/src/blog`,
       },
     },
     {
@@ -18,13 +13,10 @@ module.exports = {
         plugins: [{
           resolve: 'gatsby-remark-vscode',
           options: {
-            theme: 'Visual Studio Light',
+            theme: 'Monokai',
           },
         }],
       },
     },
   ],
-  flags: {
-    PRESERVE_WEBPACK_CACHE: true,
-  },
 };

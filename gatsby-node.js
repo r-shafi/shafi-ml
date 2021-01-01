@@ -1,7 +1,7 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
-  const blogPostTemplate = require.resolve('./src/templates/blogTemplate.js');
+  const postTemplate = require.resolve('./src/templates/blog.js');
 
   const result = await graphql(`
     {
@@ -10,6 +10,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           order: DESC,
           fields: [frontmatter___date]
         }
+        limit: 1000
       ) {
         edges {
           node {
@@ -23,14 +24,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   `);
 
   if (result.errors) {
-    reporter.panicOnBuild('ERROR WHILE RUNNING GRAPHQL QUERY');
-    return;
+    reporter.panicOnBuild('Error while running GraphQL query.');
+    return null;
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.slug,
-      component: blogPostTemplate,
+      component: postTemplate,
       context: {
         slug: node.frontmatter.slug,
       },

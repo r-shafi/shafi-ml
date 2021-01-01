@@ -1,7 +1,4 @@
-var plugins = [{
-      plugin: require('C:/Users/shafi/Documents/Codes/shafi-ml/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
-      options: {"plugins":[]},
-    }]
+var plugins = []
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {

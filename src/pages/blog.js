@@ -1,20 +1,19 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
-import Base from '../components/base';
-import Head from '../components/head';
+import Layout from '../components/layout';
 
-import blog from '../style/blog.module.css';
+import style from '../styles/blog.module.css';
 
-const PostLink = ({ post }) => (
-  <Link to={post.frontmatter.slug} className={blog.link}>
-    <div className={blog.post}>
+function Post({ post }) {
+  return (
+    <Link to={post.frontmatter.slug} className={style.post}>
       <h1>{post.frontmatter.title}</h1>
-      <p className={blog.date}>{post.frontmatter.date}</p>
-      <p className={blog.description}>{post.frontmatter.info}</p>
-    </div>
-  </Link>
-);
+      <p className={style.date}>{post.frontmatter.date}</p>
+      <p className={style.info}>{post.frontmatter.info}</p>
+    </Link>
+  );
+}
 
 export default function Blog({
   data: {
@@ -23,34 +22,30 @@ export default function Blog({
 }) {
   const Posts = edges
     .filter((edge) => !!edge.node.frontmatter.date)
-    .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
+    .map((edge) => <Post key={edge.node.id} post={edge.node} />);
 
   return (
-    <Base>
-      <Head title="Blog" />
-      <div className={blog.posts}>{Posts}</div>
-    </Base>
+    <Layout>
+      <div className={style.blogContainer}>{Posts}</div>
+    </Layout>
   );
 }
 
-export const query = graphql`
-query MyQuery {
-  allMarkdownRemark(sort: {
-    order: DESC,
-    fields: [frontmatter___date]
-  }) {
-    edges {
-      node {
-        id
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
           excerpt(pruneLength: 250)
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             slug
             title
             info
+          }
         }
       }
     }
   }
-}
 `;

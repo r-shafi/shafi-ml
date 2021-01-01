@@ -1,13 +1,12 @@
 import React from 'react';
-import Base from '../components/base';
-import Head from '../components/head';
 
-import style from '../style/index.module.css';
+import Layout from '../components/layout';
+
+import style from '../styles/index.module.css';
 
 export default function Home() {
   return (
-    <Base>
-      <Head title="Home" />
+    <Layout>
       <div>
         <h1>Hi, I am Shafi Rayhan!</h1>
         <p>
@@ -29,6 +28,6 @@ export default function Home() {
           CONTACT ME
         </a>
       </div>
-    </Base>
+    </Layout>
   );
 }

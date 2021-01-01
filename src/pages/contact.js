@@ -1,11 +1,9 @@
 import React from 'react';
 
-import Base from '../components/base';
-import Head from '../components/head';
+import Layout from '../components/layout';
+import me from '../assets/react.svg';
 
-import me from '../media/favicon.svg';
-
-import style from '../style/contact.module.css';
+import style from '../styles/contact.module.css';
 
 function validateEmail(email) {
   const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -57,7 +55,7 @@ function About() {
   );
 }
 
-class ContactForm extends React.Component {
+class Form extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -140,12 +138,11 @@ class ContactForm extends React.Component {
 
 export default function ContactPage() {
   return (
-    <Base>
-      <Head title="Contact" />
+    <Layout>
       <div className={style.contact}>
+        <Form />
         <About />
-        <ContactForm />
       </div>
-    </Base>
+    </Layout>
   );
 }

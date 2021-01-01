@@ -1,11 +1,9 @@
 import React from 'react';
-import Base from '../components/base';
-import Head from '../components/head';
+import Layout from '../components/layout';
 
-import style from '../style/works.module.css';
+import style from '../styles/works.module.css';
 
 const links = [
-
   {
     title: 'Progress Steps',
     link: 'https://modest-villani-d0e72a.netlify.app/progress-steps/index.html',
@@ -92,8 +90,7 @@ const links = [
 
 export default function Works() {
   return (
-    <Base>
-      <Head title="Works" />
+    <Layout>
       <div className={style.works}>
         {links.map((obj, i) => (
           <a href={obj.link} key={i} target="_blank" rel="noreferrer">
@@ -101,6 +98,6 @@ export default function Works() {
           </a>
         ))}
       </div>
-    </Base>
+    </Layout>
   );
 }

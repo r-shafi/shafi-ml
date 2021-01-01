@@ -1,53 +1,54 @@
 import React from 'react';
 
-import footerCSS from '../style/footer.module.css';
+import github from '../assets/github.svg';
+import ig from '../assets/ig.svg';
+import messenger from '../assets/messenger.svg';
+import twitter from '../assets/twitter.svg';
+import whatsapp from '../assets/whatsapp.svg';
+import facebook from '../assets/facebook.svg';
 
-import twitter from '../media/twitter.svg';
-import whatsapp from '../media/whatsapp.svg';
-import facebook from '../media/facebook.svg';
-import messenger from '../media/messenger.svg';
-import github from '../media/github.svg';
-import ig from '../media/ig.svg';
+import style from '../styles/footer.module.css';
 
 const links = [
+
+  {
+    image: github,
+    link: 'https://github.com/r-shafi',
+  },
   {
     image: twitter,
     link: 'https://twitter.com/shafiemoji',
-  },
-  {
-    image: whatsapp,
-    link: 'https://api.whatsapp.com/send?phone=8801704792392',
   },
   {
     image: facebook,
     link: 'https://www.facebook.com/shafiemoji',
   },
   {
-    image: messenger,
-    link: 'https://m.me/shafiemoji',
-  },
-  {
-    image: github,
-    link: 'https://github.com/r-shafi',
-  },
-  {
     image: ig,
     link: 'https://www.instagram.com/shafiemoji',
+  },
+  {
+    image: whatsapp,
+    link: 'https://api.whatsapp.com/send?phone=8801704792392',
+  },
+  {
+    image: messenger,
+    link: 'https://m.me/shafiemoji',
   },
 ];
 
 export default function Footer() {
   return (
-    <footer>
-      <div className={footerCSS.text}>
-        <p>Created by Shafi Rayhan</p>
+    <footer className={style.footer}>
+      <div>
+        <p>Created By Shafi</p>
         <p>
           &copy;
           {' '}
           {new Date().getFullYear()}
         </p>
       </div>
-      <div className={footerCSS.social}>
+      <div className={style.social}>
         {links.map((obj, i) => (
           <a href={obj.link} key={i} rel="noreferrer" target="_blank">
             <img src={obj.image} alt="" />
