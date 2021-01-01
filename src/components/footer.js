@@ -39,7 +39,7 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className={style.footer}>
       <div>
         <p>Created By Shafi</p>
         <p>

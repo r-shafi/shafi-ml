@@ -19,7 +19,6 @@ export default function Sidebar() {
         <Link to="/blog" activeClassName={style.current}>Blog</Link>
         <Link to="/works" activeClassName={style.current}>Works</Link>
         <Link to="/contact" activeClassName={style.current}>Contact</Link>
-        <Link to="/about" activeClassName={style.current}>About</Link>
       </nav>
 
       <Footer />

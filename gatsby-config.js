@@ -13,7 +13,7 @@ module.exports = {
         plugins: [{
           resolve: 'gatsby-remark-vscode',
           options: {
-            theme: 'Abyss',
+            theme: 'Monokai',
           },
         }],
       },
