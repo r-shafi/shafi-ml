@@ -19,7 +19,7 @@
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  border: 3px solid var(--ls);
+  border: 3px solid var(--sdbg);
 }
 
 .about h2 {
@@ -68,7 +68,7 @@
 .form form {
   padding: 1rem;
   max-width: 500px;
-  caret-color: var(--link);
+  caret-color: var(--navigation);
 }
 
 .form label {
@@ -101,7 +101,7 @@
 }
 
 .invalid {
-  color: var(--link);
+  color: var(--title);
   margin-top: -0.9rem;
   display: none;
 }
@@ -110,7 +110,7 @@
   font-size: 1.3rem;
   padding: 0 1rem;
   letter-spacing: 1.2px;
-  background: var(--navigation);
+  background: var(--title);
   border: none;
   cursor: pointer;
   box-shadow: 0 0 5px var(--sdbg);
@@ -119,5 +119,5 @@
 
 .form button:hover,
 .form button:focus {
-  background: var(--title);
+  background: var(--link);
 }

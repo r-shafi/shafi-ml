@@ -15,7 +15,7 @@
   align-items: center;
   text-decoration: none;
   color: var(--text);
-  border: 3px solid var(--navigation);
+  border: 3px solid var(--sdbg);
   font-size: 1.5rem;
   text-align: center;
   outline: none;
@@ -23,10 +23,9 @@
 
 .works a:hover,
 .works a:focus {
-  background: linear-gradient(45deg, var(--title), var(--navigation));
+  background: linear-gradient(45deg, #080808, #a4b3c4);
   background-size: 500%;
   background-position: left;
-  color: var(--black);
   box-shadow: 5px 5px 10px var(--sdbg);
   transition: 0.2s;
   animation: move 10s infinite alternate;

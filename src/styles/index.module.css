@@ -13,5 +13,5 @@
 
 .button:hover,
 .button:focus {
-  background: var(--text);
+  background: var(--link);
 }
