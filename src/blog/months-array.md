@@ -3,6 +3,7 @@ slug: '/blog/create-array-months-javascript'
 date: '2020-12-19'
 title: 'Create an Array of Months with JavaScript'
 info: 'How to create an Array of Months with JavaScript'
+tags: 'JavaScript, Array, Months, Date, Array.from'
 ---
 
 Creating an array of months in JavaScript is a very cumbersome yet necessary task. We often have to create an array of months but have to type in the months manually or copy-paste it from the internet.

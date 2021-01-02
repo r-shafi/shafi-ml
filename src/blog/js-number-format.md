@@ -3,6 +3,7 @@ slug: '/blog/js-number-format'
 date: '2020-12-14'
 title: 'Format Number with JavaScript'
 info: 'The Intl.NumberFormat() constructor creates objects that enable language sensitive number formatting.'
+tags: 'JavaScript, Number, Format, Intl, NumberFormat'
 ---
 
 > The `Intl.NumberFormat()` constructor creates objects that enable language sensitive number formatting.

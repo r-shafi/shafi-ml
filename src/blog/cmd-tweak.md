@@ -3,6 +3,7 @@ slug: '/blog/shorten-windows-cmd-path'
 date: '2020-12-18'
 title: 'How to Shorten Directory Path in Windows Command Prompt'
 info: 'How to edit directory path in Windows Command Prompt'
+tags: 'Windows, CMD, Tweaks'
 ---
 
 This is my command prompt when I open it up

@@ -3,6 +3,7 @@ slug: '/blog/nodejs-learning-resources'
 date: '2020-12-04'
 title: 'NodeJS Learning Resources'
 info: 'Best NodeJS learning resources for beginners. A collection of Documentations, YouTube Tutorials and Full Courses for learning NodeJS.'
+tags: 'Node, NodeJS, Learning, Resources'
 ---
 
 Finding a starting point when you're trying to learn **NodeJS** from scratch is really hard. I had the same problem and I combed through the internet in search of a learning resource when I first dipped my toes in _Nodeland_.

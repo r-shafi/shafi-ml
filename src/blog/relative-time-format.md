@@ -3,6 +3,7 @@ slug: '/blog/relative-time-format'
 date: '2020-12-16'
 title: 'Format Time and Date Relatively with JavaScript'
 info: 'Intl.RelativeTimeFormat enables localized formatting of relative times without sacrificing performance.'
+tags: 'JavaScript, Relative, Time, Format, Intl, RelativeTimeFormat'
 ---
 
 > `Intl.RelativeTimeFormat` enables localized formatting of relative times without sacrificing performance.

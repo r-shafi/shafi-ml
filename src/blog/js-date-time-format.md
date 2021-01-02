@@ -3,6 +3,7 @@ slug: '/blog/js-date-time-format'
 date: '2020-12-13'
 title: 'Format Date and Time with JavaScript'
 info: 'We can use the DateTimeFormat constructor of Intl object to quickly format any Date object for us and return a formatted date string'
+tags: 'JavaScript, Date, Time, Format, Intl, DateTimeFormat'
 ---
 
 > The **Intl** object is the namespace for the ECMAScript Internationalization API, which provides language sensitive string comparison, number formatting, and date and time formatting.

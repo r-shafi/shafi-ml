@@ -3,6 +3,7 @@ slug: '/blog/css-image-resize'
 date: '2020-12-23'
 title: 'How to Resize Uneven Sized Images without breaking their Aspect Ratio'
 info: 'Give custom height and width to Images without breaking their aspect ratio.'
+tags: 'CSS, Images, Resize, Aspect Ratio, Custom Size'
 ---
 
 We often have to work with images that varies in size and aspect ratio. But we have to fit them in a container, and to keep the aesthetic of our design we usually choose to resize all the images into a same size.

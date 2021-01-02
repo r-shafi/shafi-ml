@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
+import Head from '../components/head';
 
 import style from '../styles/post.module.css';
 import '../styles/pre.css';
@@ -12,6 +13,7 @@ export default function BlogPost({ data }) {
 
   return (
     <Layout>
+      <Head title={frontmatter.title} description={frontmatter.info} keywords={frontmatter.tags} />
       <div className={style.postContainer}>
         <h1>{frontmatter.title}</h1>
         <p className={style.date}>{frontmatter.date}</p>
@@ -35,6 +37,8 @@ export const data = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+        info
+        tags
       }
     }
   }
