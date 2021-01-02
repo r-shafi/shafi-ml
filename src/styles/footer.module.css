@@ -15,7 +15,7 @@
 
 .social a:hover,
 .social a:focus {
-  background: var(--background);
+  background: var(--title);
 }
 
 .social img {
@@ -35,9 +35,5 @@
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
-  }
-  .social a:hover,
-  .social a:focus {
-    background: var(--navigation);
   }
 }

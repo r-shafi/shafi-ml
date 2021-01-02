@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
 :root {
-  --background: #363748;
-  --navigation: #8d77fe;
-  --title: #b0a0fc;
-  --text: #bfc8ea;
+  --background: #1f242c;
+  --navigation: #222831;
+  --title: #fd5c63;
+  --text: #fdfdfd;
   --black: #0a0a0b;
-  --link: #ff75a3;
+  --link: #a7ff83;
   --code: #fdc036;
   --dbg: rgba(0, 0, 0, 0.05);
   --sdbg: rgba(0, 0, 0, 0.25);
@@ -100,7 +100,7 @@ li {
   background: var(--black);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--navigation);
+  background: var(--link);
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--title);

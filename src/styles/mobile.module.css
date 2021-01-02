@@ -10,6 +10,7 @@
   z-index: 2;
   padding: 0 5vw;
   background: var(--navigation);
+  box-shadow: 0 5px 15px var(--sdbg);
 }
 
 .header a {
@@ -18,7 +19,6 @@
 
 .header h1 {
   font-size: 32px;
-  color: var(--black);
 }
 
 .header button {
@@ -47,7 +47,7 @@
   gap: 1rem;
   padding: 1rem;
   visibility: hidden;
-  background: var(--black);
+  background: var(--navigation);
 }
 
 .nav a {
@@ -63,7 +63,7 @@
 }
 
 .nav a.current {
-  color: var(--navigation);
+  color: var(--title);
   background: rgba(255, 255, 255, 0.05);
 }
 
@@ -74,7 +74,7 @@
 
 .nav a.current:hover,
 .nav a.current:focus {
-  border-color: var(--navigation);
+  border-color: var(--title);
 }
 
 .show {

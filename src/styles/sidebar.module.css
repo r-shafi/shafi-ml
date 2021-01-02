@@ -9,11 +9,6 @@
   flex-direction: column;
   justify-content: space-between;
   background: var(--navigation);
-  color: var(--black);
-}
-
-.sidebar h1 {
-  color: var(--black);
 }
 
 .navigation {
@@ -30,18 +25,26 @@
   border-radius: 0.5rem;
   transition: 0.1s;
   background: var(--dbg);
-  color: var(--black);
+  color: var(--title);
   border: 2px solid transparent;
   outline: none;
 }
 
 .navigation a:hover,
 .navigation a:focus {
-  border-color: var(--black);
+  border-color: var(--title);
 }
 
 .navigation a.current {
-  background: var(--title);
+  color: var(--black);
+  background: var(--link);
+}
+
+.navigation a.current:hover,
+.navigation a.current:focus {
+  border-color: var(--link);
+  color: var(--link);
+  background: transparent;
 }
 
 @media (max-width: 800px) {

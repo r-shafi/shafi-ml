@@ -1,8 +1,8 @@
 pre.grvsc-container.monokai {
-  border: 2px solid var(--navigation);
-  background: #17202a;
+  border: 2px solid var(--link);
+  background: var(--navigation);
 }
 
 .grvsc-container span.mtk3 {
-  color: #ffca28;
+  color: #797b82;
 }

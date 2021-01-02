@@ -1,7 +1,7 @@
 .postContainer {
   padding: 1rem 0;
+  margin: 2rem auto;
   border-radius: 1rem;
-  margin: 2rem 0;
   max-width: 100%;
 }
 
@@ -27,17 +27,14 @@
 
 .postContainer a:hover,
 .postContainer a:focus {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--link);
   color: var(--black);
 }
 
-.postContainer li {
-  margin: 0.5rem 0;
-}
-
 .postContainer li:not(a) {
-  color: var(--title);
-  text-shadow: 0 0 1px var(--link);
+  margin: 0.5rem 0;
+  color: var(--text);
+  text-shadow: 0 0 3px var(--title);
 }
 
 .postContainer li a {
