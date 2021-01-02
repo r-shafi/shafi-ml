@@ -3,6 +3,7 @@ slug: '/blog/create-array-from-n-to-x'
 date: '2020-12-24'
 title: 'How to Create an Array Containing 1 to N in JavaScript'
 info: 'How to create an array beginning at Number-X and that ends at Number-Y?'
+tags: 'JavaScript, Array, Destructure, Map Function, Array.from'
 ---
 
 If you have to create an array that starts at **1** and ends at **1000**, I'll bet $20 that you're not going to type in all the numbers manually.

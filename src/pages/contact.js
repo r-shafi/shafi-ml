@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Layout from '../components/layout';
+import Head from '../components/head';
+
 import me from '../assets/react.svg';
 
 import style from '../styles/contact.module.css';
@@ -139,6 +141,7 @@ class Form extends React.Component {
 export default function ContactPage() {
   return (
     <Layout>
+      <Head title="Contact" description="Contact and About Shafi Rayhan." />
       <div className={style.contact}>
         <Form />
         <About />

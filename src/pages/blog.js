@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
+import Head from '../components/head';
 
 import style from '../styles/blog.module.css';
 
@@ -26,6 +27,7 @@ export default function Blog({
 
   return (
     <Layout>
+      <Head title="Blog" description="Blog by Shafi Rayhan. I talk about JavaScript, CSS, React and other web stuffs!" />
       <div className={style.blogContainer}>{Posts}</div>
     </Layout>
   );

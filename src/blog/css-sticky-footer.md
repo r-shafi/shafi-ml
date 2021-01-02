@@ -3,6 +3,7 @@ slug: '/blog/css-footer-at-bottom'
 date: '2020-12-21'
 title: 'How to Make Footer Stick to the Bottom of the Page'
 info: 'The easiest way you can make your websites `footer` stick to the bottom of the page no matter what the height of your webpage is to use CSS `flex-box`.'
+tags: 'CSS, Footer, Bottom, Flexbox'
 ---
 
 The easiest way you can make your websites `footer` stick to the bottom of the page no matter what the height of your webpage is to use CSS `flexbox`.

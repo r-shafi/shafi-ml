@@ -1,12 +1,14 @@
 import React from 'react';
 
 import Layout from '../components/layout';
+import Head from '../components/head';
 
 import style from '../styles/index.module.css';
 
 export default function Home() {
   return (
     <Layout>
+      <Head title="Home" />
       <div>
         <h1>Hi, I am Shafi Rayhan!</h1>
         <p>
