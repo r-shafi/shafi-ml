@@ -16,7 +16,6 @@ export default function Head({ title, description, keywords }) {
         {' '}
         | Shafi Rayhan
       </title>
-      <link rel="canonical" href="https://shafi.ml/" />
     </Helmet>
   );
 }
