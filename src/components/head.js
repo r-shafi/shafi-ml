@@ -16,6 +16,10 @@ export default function Head({ title, description, keywords }) {
         {' '}
         | Shafi Rayhan
       </title>
+      <meta name="twitter:card" content="summary"></meta>
+      <meta name="twitter:creator" content="@shafiemoji"></meta>
+      <meta name="twitter:title" content={title}></meta>
+      <meta name="twitter:description" content={description || defaultDescription}></meta>
     </Helmet>
   );
 }

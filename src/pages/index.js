@@ -15,18 +15,19 @@ export default function Home() {
           I&apos;m a Front-End Web Developer based in Sylhet.
         </p>
         <p>
-          I have been creating websites since 2017 and have mastered
+          I have been creating websites since 2019 and have mastered
           {' '}
           <strong>HTML, CSS, JavaScript, React &amp; GatsbyJS</strong>
           .
         </p>
         <p>
           Nowadays I&apos;m spending my time trying to learn
-          <strong> NodeJS, GraphQL, SCSS </strong>
+          <strike> NodeJS, GraphQL, SCSS </strike>
+          <strong> Angular, TypeScript </strong>
           and many more web technologies.
         </p>
         <p>Contact me if you want me to create a website for you.</p>
-        <a href="mailto:shafirayhan@hotmail.com" className={style.button}>
+        <a href="mailto:rayhanshafi7@gmail.com" className={style.button}>
           CONTACT ME
         </a>
       </div>
