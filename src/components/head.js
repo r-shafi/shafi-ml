@@ -18,20 +18,17 @@ export default function Head({ title, description, keywords }) {
         | Shafi Rayhan
       </title>
 
-      <link rel="shortcut icon" href={favicon} type="image/png"/>
-      
-      <meta property="og:url" content="https://www.shafi.ml/" />
-      <meta property="og:type" content="article" />
-      <meta property="og:title" content="Shafi Rayhan" />
-      <meta property="og:description" content="I am Shafi Rayhan, an experienced Front-End Web Developer from Sylhet, Bangladesh." />
-      <meta property="og:image" content="https://i.imgur.com/pJIMjxg.png" />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="../assets/bg.png" />
+      <meta property="og:url" content="https://www.shafi.ml" />
 
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@shafiemoji" />
-      <meta name="twitter:creator" content="@shafiemoji" />
-      <meta name="twitter:title" content="Shafi Rayhan" />
-      <meta name="twitter:description" content="I am Shafi Rayhan, an experienced Front-End Web Developer from Sylhet, Bangladesh." />
-      <meta name="twitter:image" content="https://i.imgur.com/pJIMjxg.png" />
+      <meta property="article:publisher" content="https://www.shafi.ml" />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:image" content="../assets/bg.png" />
+      <meta property="twitter:site" content="@shafiemoji" />
     </Helmet>
   );
 }
