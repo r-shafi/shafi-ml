@@ -13,7 +13,7 @@ export default function BlogPost({ data }) {
 
   return (
     <Layout>
-      <Head title={frontmatter.title} description={frontmatter.info} keywords={frontmatter.tags} />
+      <Head title={frontmatter.title} description={frontmatter.info} keywords={frontmatter.tags} url={frontmatter.slug} />
       <div className={style.postContainer}>
         <h1>{frontmatter.title}</h1>
         <p className={style.date}>{frontmatter.date}</p>
