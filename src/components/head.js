@@ -20,7 +20,7 @@ export default function Head({
       </title>
 
       <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
+      <meta property="og:description" content={description || defaultDescription} />
       <meta property="og:type" content="website" />
       <meta property="og:image" content="../assets/bg.png" />
       <meta property="og:url" content={slug ? `https://www.shafi.ml${slug}` : 'https://www.shafi.ml'} />
