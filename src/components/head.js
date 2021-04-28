@@ -21,14 +21,17 @@ export default function Head({
 
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description || defaultDescription} />
+      <meta name="image" content="https://www.shafi.ml/static/bg.png" />
+
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="../assets/bg.png" />
+      <meta property="og:image" content="https://www.shafi.ml/static/bg.png" />
       <meta property="og:url" content={slug ? `https://www.shafi.ml${slug}` : 'https://www.shafi.ml'} />
+      <meta property="og:site_name" content="Shafi Rayhan" />
 
       <meta property="article:publisher" content="https://www.shafi.ml" />
 
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:image" content="../assets/bg.png" />
+      <meta property="twitter:image" content="https://www.shafi.ml/static/bg.png" />
       <meta property="twitter:site" content="@shafiemoji" />
     </Helmet>
   );
