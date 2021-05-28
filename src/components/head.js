@@ -9,6 +9,7 @@ export default function Head({
 }) {
   return (
     <Helmet>
+      <script data-ad-client="ca-pub-1558398208341058" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       <meta charSet="utf-8" />
       <meta name="keywords" content={keywords || defaultKW} />
       <meta name="description" content={description || defaultDescription} />
