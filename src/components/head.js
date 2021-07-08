@@ -37,9 +37,9 @@ export default function Head({
       <meta property="twitter:image" content="https://www.shafi.ml/static/bg.png" />
       <meta property="twitter:site" content="@shafiemoji" />
 
-      <meta name="twitter:title" content={title}>
-      <meta name="twitter:description" content={description || defaultDescription}>
-      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description || defaultDescription} />
+      <meta name="twitter:card" content="summary_large_image" />
 
       <link rel="icon" href={favicon} type="image/png" />
     </Helmet>
