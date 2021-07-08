@@ -4,6 +4,8 @@ import { Helmet } from 'react-helmet';
 const defaultDescription = 'I am Shafi Rayhan, an experienced Front-End Web Developer from Sylhet, Bangladesh.';
 const defaultKW = 'Front-End, Web Developer, Sylhet, React, GatsbyJS';
 
+import favicon from '../assets/favicon.png'
+
 export default function Head({
   title, description, keywords, slug
 }) {
@@ -34,6 +36,7 @@ export default function Head({
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:image" content="https://www.shafi.ml/static/bg.png" />
       <meta property="twitter:site" content="@shafiemoji" />
+      <link rel="shortcut icon" href="favicon.png" type="image/png" />
     </Helmet>
   );
 }

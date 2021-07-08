@@ -1,5 +1,9 @@
 module.exports = {
+  siteMetadat: {
+    siteUrl: 'https://www.shafi.ml/'
+  },
   plugins: [
+    `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
