@@ -17,14 +17,11 @@ export default function Home() {
         <p>
           I have been creating websites since 2019 and have mastered
           {' '}
-          <strong>HTML, CSS, JavaScript, React &amp; GatsbyJS</strong>
+          <strong>HTML, CSS, JavaScript, React, Angular &amp; GatsbyJS</strong>
           .
         </p>
         <p>
-          Nowadays I&apos;m spending my time trying to learn
-          <strike> NodeJS, GraphQL, SCSS </strike>
-          <strong> Angular, TypeScript </strong>
-          and many more web technologies.
+          Nowadays I&apos;m spending my time trying to learn Backend Web Technologies.
         </p>
         <p>Contact me if you want me to create a website for you.</p>
         <a href="mailto:rayhanshafi7@gmail.com" className={style.button}>
