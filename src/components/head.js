@@ -11,7 +11,7 @@ export default function Head({
 }) {
   return (
     <Helmet>
-      <script data-ad-client="ca-pub-1558398208341058" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <meta name="google-site-verification" content="G06X29JfK8MH1UIKdHv9dT2JeWW9S9SgyKgLDiccrKM" />
       <meta charSet="utf-8" />
       <meta name="keywords" content={keywords || defaultKW} />
       <meta name="description" content={description || defaultDescription} />
@@ -36,7 +36,12 @@ export default function Head({
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:image" content="https://www.shafi.ml/static/bg.png" />
       <meta property="twitter:site" content="@shafiemoji" />
-      <link rel="shortcut icon" href="favicon.png" type="image/png" />
+
+      <meta name="twitter:title" content={title}>
+      <meta name="twitter:description" content={description || defaultDescription}>
+      <meta name="twitter:card" content="summary_large_image">
+
+      <link rel="icon" href={favicon} type="image/png" />
     </Helmet>
   );
 }
