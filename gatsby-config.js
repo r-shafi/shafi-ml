@@ -1,5 +1,5 @@
 module.exports = {
-  siteMetadat: {
+  siteMetadata: {
     siteUrl: 'https://www.shafi.ml/'
   },
   plugins: [
